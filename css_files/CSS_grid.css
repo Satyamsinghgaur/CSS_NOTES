@@ -1,0 +1,7 @@
+img {
+    border: 2px solid white;
+}
+
+th, td, table {
+    padding: 3px;
+}

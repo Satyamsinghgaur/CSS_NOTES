@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/box_Model.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title> BOX MODEL| DELTA BATCH NOTES</title>
+</head>
+<body>
+<!-- this is header portion -->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>Box Model in CSS</h1>
+    </header>
+
+<!-- this is main portion -->
+    <main>
+        <!-- box model introduction -->
+        <h2>Box Model :-</h2>
+        <div class="border_down">
+            <p>In HTML, All HTML elements can be considered as boxes. The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.</p>
+            <img src="../Images/CSS_box.png" alt="css box model" height="200px" draggable="false">
+        </div>
+        <!-- box model elements -->
+        <div class="border_down">
+            <h2>Box Model Elements :-</h2>
+            <ul>
+                <li><span class="bold_x">Content :-</span> The content of the box, where text and images appear. It has two componets :- 
+                    <ol>
+                        <li>Height</li>
+                        <li>Width</li>
+                    </ol>
+                </li>
+                <li><span class="bold_x">Padding :-</span> Clears an area around the content. The padding is transparent</li>
+                <li><span class="bold_x">Border :-</span> A border that goes around the padding and content</li>
+                <li><span class="bold_x">Margin :-</span> Clears an area outside the border. The margin is transparent</li>
+            </ul>
+            <img src="../Images/Box_model_properties.png" alt="box model contents" draggable="false" height="170px">
+        </div>
+        <!-- box model properties -->
+        <div class="border_down">
+            <h2>CSS BOX MODEL PROPERTIES</h2>
+            <ul>
+                <!-- height -->
+                <li>
+                    <p>
+                        <span class="bold_x">Height :-</span>
+                        By default, it sets the <span style="color: yellow;">content area height</span> of the element.
+                    </p>
+                    <img src="../Images/height.png" alt="height" height="150px" draggable="false">
+                    <div class="code">
+                        <span><span style="color: yellow;">div</span> {</span><br>
+                        &nbsp;&nbsp;<span style="color: orange;">height: 100px;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+                <!-- widht -->
+                <li>
+                    <p>
+                        <span class="bold_x">Width :-</span>
+                        By default, it sets the <span style="color: yellow;">content area width</span> of the element.
+                    </p>
+                    <img src="../Images/width.png" alt="width" height="150px" draggable="false">
+                    <div class="code">
+                        <span><span style="color: yellow;">div</span> {</span><br>
+                        &nbsp;&nbsp;<span style="color: orange;">width: 300px;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+                <!-- Border -->
+                <li>
+                    <p>
+                        <span class="bold_x">Border :-</span>
+                        Used to set an element's border
+                    </p>
+                    <ol>
+                        <!-- border-width -->
+                        <li>
+                            border-width
+                            <div class="code">
+                                <span><span style="color: yellow;">div</span> {</span><br>
+                                &nbsp;&nbsp;<span style="color: orange;">border-width: 5px;</span><br>
+                                <span>}</span>
+                            </div>
+                            <h3>border-width values :-</h3>
+                            <ul>
+                                <li>border-width: <span style="color: yellow;">thin</span>;</li>
+                                <li>border-width: <span style="color: yellow;">medium</span>;</li>
+                                <li>border-width: <span style="color: yellow;">thick</span>;</li>
+                                <li>border-width: <span style="color: yellow;">5px</span>;</li>
+                            </ul>
+                        </li><br>
+                        <!-- border-style -->
+                        <li>
+                            border-style
+                            <div class="code">
+                                <span><span style="color: yellow;">div</span> {</span><br>
+                                &nbsp;&nbsp;<span style="color: orange;">border-style: solid;</span><br>
+                                <span>}</span>
+                            </div>
+                            <h3>border-style values :-</h3>
+                            <ul>
+                                <li>border-style: <span style="color: yellow;">none</span>;</li>
+                                <li>border-style: <span style="color: yellow;">hidden</span>;</li>
+                                <li>border-style: <span style="color: yellow;">dotted</span>;</li>
+                                <li>border-style: <span style="color: yellow;">dashed</span>;</li>
+                                <li>border-style: <span style="color: yellow;">solid</span>;</li>
+                                <li>border-style: <span style="color: yellow;">double</span>;</li>
+                                <li>border-style: <span style="color: yellow;">groove</span>;</li>
+                                <li>border-style: <span style="color: yellow;">ridge</span>;</li>
+                                <li>border-style: <span style="color: yellow;">inset</span>;</li>
+                                <li>border-style: <span style="color: yellow;">outset</span>;</li>
+                            </ul>
+                            <div class="output">
+                                <p class="none">no (None) border</p>
+                                <p class="hidden">Hidden Border</p>
+                                <p class="dotted">Dotted Border</p>
+                                <p class="dashed">Dashed Border</p>
+                                <p class="solid">Solid border</p>
+                                <p class="double">Double Border</p>
+                                <p class="groove">Groove border</p>
+                                <p class="ridge">ridge border</p>
+                                <p class="inset">inset border</p>
+                                <p class="outset">Outset Border</p>
+                            </div>
+                        </li>
+                        <!-- border-color -->
+                        <li>
+                            border-color
+                            <div class="code">
+                                <span><span style="color: yellow;">div</span> {</span><br>
+                                &nbsp;&nbsp;<span style="color: orange;">border-color: orange;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                        <!-- Border-radius -->
+                        <li>
+                            Border-radius
+                            <p>Used to <span style="color: yellow;">round the corners</span> of an element's outer border edge.</p>
+                            <div class="code">
+                                <span><span style="color: yellow;">div</span> {</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 15px;</span><br><br>
+                                    &nbsp;&nbsp;<span style="color: gray;">&lt;!-- OR --&gt;</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 50%;</span><br>
+                                    <span>}</span>
+                            </div>
+                            <ul>
+                                <li><span>border-top-left-radius</span></li>
+                                <li><span>border-top-right-radius</span></li>
+                                <li><span>border-bottom-right-radius</span></li>
+                                <li><span>border-bottom-left-radius</span></li>
+                            </ul>
+                            <div class="code">
+                                <span><span style="color: yellow;">div</span> {</span><br>
+                                    <!-- one dimention -->
+                                    &nbsp;&nbsp;<span style="color: gray;">&lt;!-- Radius is set for all 4 sides --&gt;</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 50%;</span><br>
+                                     <!-- two dimention -->
+                                    &nbsp;&nbsp;<span style="color: gray;">&lt;!-- top-left-and-bottom-right | top-right-and-bottom-left --&gt;</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 10px 5%;</span><br>
+                                     <!-- three dimention -->
+                                    &nbsp;&nbsp;<span style="color: gray;">&lt;!-- top-left | top-right-and-bottom-left | bottom-right --&gt;</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 2px 4px 2px;</span><br>
+                                     <!-- four dimention -->
+                                    &nbsp;&nbsp;<span style="color: gray;">&lt;!--  top-left | top-right | bottom-right | bottom-left --&gt;</span><br>
+                                    &nbsp;&nbsp;<span style="color: orange;">border-radius: 1px 0 3px 4px;</span><br>
+                                    <span>}</span>
+                            </div>
+                        </li>
+                    </ol>
+                    <ul>
+                        <li>
+                            <h2>Border Short-hand</h2>
+                            <p>
+                                We can also write it in combination as given below :- <br><span style="color: aqua;">Width | Style | Color
+
+                                </span></p>
+                            <div class="code">
+                                <span><span style="color: pink;">div</span> {</span><br>
+                                &nbsp;&nbsp;<span>border: <span style="color: yellow;">border-width</span> <span style="color: red;">border-style</span> <span style="color: aqua;">border-color</span> ;</span><br>
+                                &nbsp;&nbsp;<span>border: <span style="color: yellow;">5px</span> <span style="color: red;">solid</span> <span style="color: aqua;">red</span> ;</span><br>
+                                <span>}</span><br>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>Border Sides</h2>
+                            <p>
+                                To control an <span style="color: yellow;">Individual side</span> of the box.
+                            </p>
+                            <ul class="code" style="padding: 2px;">
+                                <li>border-left<span style="color: orange;">-wight</span> :<span style="color: aqua;">5px</span>;</li>
+                                <li>border-right<span style="color: orange;">-color</span> :<span style="color: aqua;">red</span>;</li>
+                                <li>border-top<span style="color: orange;">-style</span> :<span style="color: aqua;">solid</span>;</li>
+                                <li>border-bottom :<span style="color: aqua;">5px solid red</span>;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <!-- padding -->
+                <li>                    
+                    <p>
+                        <span class="bold_x">Padding :-</span>
+                    </p>
+                    <img src="../Images/padding.png" alt="padding" height="150px" draggable="false"><br>
+                    <div class="code">
+                        <span><span style="color: yellow;">div</span> {</span><br>
+                        <ul>
+                            &nbsp;&nbsp;<li><span style="color: orange;">padding-top: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">padding-right: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">padding-bottom: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">padding-left: 50px</span></li>
+                        </ul>
+                        <span>}</span>
+                    </div>
+                    <span class="bold_x">Padding Short-hand :-</span>
+                    <img src="../Images/padding_shorthand.png" alt="padding shorthand" height="270px" draggable="false" style="border: 2px solid white;">
+                </li>
+                <!-- Margin -->
+                <li>
+                    <p>
+                        <span class="bold_x">Margin :-</span> To set spacing on the <span style="color: yellow;">outside</span> of border. 
+                    </p>
+                    <img src="../Images/margin.png" alt="margin" height="120px" draggable="false">
+                    <div class="code">
+                        <span><span style="color: yellow;">div</span> {</span><br>
+                        <ul>
+                            &nbsp;&nbsp;<li><span style="color: orange;">margin-top: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">margin-right: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">margin-bottom: 50px</span></li>
+                            &nbsp;&nbsp;<li><span style="color: orange;">margin-left: 50px</span></li>
+                        </ul>
+                        <span>}</span>
+                    </div>
+                    <span class="bold_x">Margin Short-hand :-</span><br>
+                    <img src="../Images/margin_shorthand.png" alt="margin shorthand" draggable="false" height="300px" style="border: 2px solid white;">
+                </li>
+            </ul>
+        </div>
+        <div class="border_down">
+            <p>
+                <span class="bold_x">Note :- </span><br>
+                We can give border, padding, margin their style in different dimensions by follwing methods :-
+                <br>
+                <img src="../Images/0_d.png" alt="property in different dimentions" height="100px" draggable="false" style="border: 2px solid white;"><br><span class="bold_x">We can combine these by following method. </span><br>
+                <img src="../Images/4_d_2.png" alt="Property dimeation combine" height="60px" draggable="false" style="border: 2px solid white;"><br><span class="bold_x">If only one value is given :-</span><br>
+                <img src="../Images/1_d.png" alt="one dimeational value" height="60px" draggable="false" style="border: 2px solid white;"><br><span class="bold_x">If two values are given :- </span><br>
+                <img src="../Images/2_d.png" alt="two  dimeational value" height="70px" draggable="false" style="border: 2px solid white;"><br><span class="bold_x">If three values are given :- </span><br>
+                <img src="../Images/3d.png" alt="three  dimeational value" height="80px" draggable="false" style="border: 2px solid white;"><br><span class="bold_x">If four values are given :- </span><br>
+                <img src="../Images/4_d.png" alt="four  dimeational value" height="80px" draggable="false" style="border: 2px solid white;"><br>
+            </p>
+        </div>
+
+
+        <h3>Delta Batch Practice Page :-</h3>
+        <a href="../Exercise/html_files/Box_Model_Practice.html" target="_blank">BOX MODEL PRACTICE PAGE | DELTA BATCH</a>
+    </main>
+
+<!-- this is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+</body>
+</html>

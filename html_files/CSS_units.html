@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/css_units.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title>CSS UNITS AND 'INLINE & BLOCK ELEMENT' | DELTA BATCH NOTES</title>
+</head>
+<body>
+<!-- this is header portion -->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>CSS Units and 'Inline & Block Elements'</h1>
+    </header>
+
+<!-- this is main portion -->
+    <main>
+        <!-- inline and block element -->
+        <div class="border_down" style="padding-left: 15px;">
+            <h2>Inline and Block Elements</h2>
+            <span class="bold_x">Block Elements :-</span> 
+            <ul>
+                <li>Takes up the full-width available (whole block).</li>
+                <li>Start from new line.</li>
+            </ul>
+            <span class="bold_x">Inline Elements :-</span> 
+            <ul>
+                <li>Takes up only necessary width.</li>
+                <li>Don't start from new line.</li>
+                <li>In inline element <Span style="color: aqua;">Padding</Span> is only implemented on left and Right. browser will ignore the other padding properties.</li>
+                <li>In inline element <Span style="color: aqua;">Margin</Span> is only implemented on left and Right. browser will ignore the other margin properties.</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BLOCK ELEMENT</th>
+                        <th>INLINE ELEMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Always start on a new line. </td>
+                        <td>Do not start on a new line.</td>
+                    </tr>
+                    <tr>
+                        <td>Take up as much horizontal space as possible (the 
+                            full width of the container or browser window if 
+                            there is no container).</td>
+                        <td>Only use as much horizontal space as required by 
+                            the content. Do not accept width and height CSS 
+                            properties.</td>
+                    </tr>
+                    <tr>
+                        <td>Will respect width and height CSS properties.</td>
+                        <td>Margins will work horizontally, but not vertically.</td>
+                    </tr>
+                    <tr>
+                        <td>Horizontal and vertical margins both work.</td>
+                        <td>Padding works on all sides, but the top and bottom 
+                            may overlap other elements.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- display Property -->
+        <div class="border_down">
+            <h3>Display Property :-</h3>
+            <p>
+                It sets whether an element is treated as a block or inline element and the <span style="color: yellow;">layout</span> used for its children.
+            </p>
+            <div class="code">
+                <span style="color: orange;">display: inline;</span><br><br>
+                <span style="color: orange;">display: block;</span><br><br>
+                <span style="color: orange;">display: inline-block;</span>
+            </div>
+            <div>
+                <table border="solid">
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>CSS Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>inline</td>
+                            <td>Displays an element as an inline element. Any height and width properties will have no effect. This is default.</td>
+                            <td style="background-color: black; color: orange;">display: inline;</td>
+                        </tr>
+                        <tr>
+                            <td>block</td>
+                            <td>Displays an element as a block element. It starts on a new line, and takes up the whole width.</td>
+                            <td class="td_code" style="background-color: black; color: orange;">display: block;</td>
+                        </tr>
+                        <tr>
+                            <td>inline-block</td>
+                            <td>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values</td>
+                            <td class="td_code ib" style="background-color: black; color: orange;">display: inline-block;</td>
+                        </tr>
+                        <tr>
+                            <td>flex</td>
+                            <td>Displays an element as a block-level flex container.</td>
+                            <td class="td_code" style="background-color: black; color: orange;">display: flex;</td>
+                        </tr>
+                        <tr>
+                            <td>grid</td>
+                            <td>Displays an element as a block-level grid container.</td>
+                            <td class="td_code" style="background-color: black; color: orange;">display: grid;</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>The element is completely removed</td>
+                            <td class="td_code" style="background-color: black; color: orange;">display: none;</td>
+                        </tr>
+                        <!-- <tr>
+                            <td></td>
+                            <td></td>
+                            <td style="background-color: black; color: orange;">display: ;</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- units in css -->
+        <div class="border_down">
+            <H3>Units In CSS</H3>
+            <img src="../Images/absolute&RelativeUnits.png" alt="absoute and relative units in css" height="200px" draggable="false">
+            <p><span class="bold_x">Note :-</span> We have studied absolute unit (PX) in previous html chapter in this we will talk about relative units.</p>
+            <h2>Relative Units:-</h2>
+            <ul>
+                <!-- Percentages -->
+                <li>
+                    <span class="bold_x">Percentages (%) :-</span>
+                    <p>
+                        It is often used to define a <span style="color: yellow;">size as relative to an element's parent</span> object. <br><br>
+                        <span class="bold_x">eg:</span><br>
+                        width : 33.33%  <span style="color: gray;">//relative to the parent</span><br>
+                        margin-left : 50% <span style="color: gray;">//relative to the parent size</span>
+                    </p>
+                </li>
+                <!-- Em -->
+                <li>
+                    <span class="bold_x">Em :-</span>
+                    <p>
+                        &diam; Font size of the parent, in the case of typographical properties (text related properties) like <span style="color: yellow;">font-size / font-weight</span><br>&diam; and font size of the element itself, in the case of other properties like <span style="color: yellow;">width / height / padding / margin</span>.
+                    </p>
+                    <span class="bold_x">Drawback of Em :-</span>
+                    <p><span style="color: yellow;">Snowball Effect</span> in nested elements.</p>
+                </li>
+                <!-- rem -->
+                <li>
+                    <span class="bold_x">Rem<span style="color: aqua;">(Root Em)</span> :-</span>
+                    <p>
+                        Font size of the root element. <br><br>
+                        <span class="bold_x">eg :</span><br><span style="color: orange;">font-size: 2rem;</span><br> <span style="color: gray;">//it will make the font-size of the all the child and nested child elements by double the size of the root element.</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="bold_x">Inlline and Block Element Practice :-</span><br>
+            <a href="../Exercise/html_files/Inline_practice.html" target="_blank">Clink Here.</a>
+        </div>
+    </main>
+
+<!-- this is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+</body>
+</html>

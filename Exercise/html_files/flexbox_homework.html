@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX HOMEWORK</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container1 {
+            height: 400px;
+            width: 400px;
+            font-size: 50px;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .item1 {
+            height: 100px;
+            width: 100px;
+            font-size: 50px;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        .container2 {
+            height: 50px;
+            width: 900px;
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            display: flex;
+            background-color: pink;
+            justify-content: flex-start;
+            align-content: center;
+        }
+
+        .item2 {
+            height: 50px;
+            width: 80px;
+            margin-left: 5px;
+            font-size: 24px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <H1>Home-Work</H1>
+    <hr>
+    <h2>Practice Question 1</h2>
+    <img src="../images/flexbox_practice_01.png" alt="ps1" height="300vh">
+    <p>
+        Take the container height & width as 400px & child height & width as 100px. <br>
+        Font size of text as 50px.
+    </p>
+    <h2>Ans:</h2>
+    <div id="ans1">
+        <div class="container1">
+            <div class="item1">A</div>
+            <div class="item1">B</div>
+            <div class="item1">C</div>
+            <div class="item1">D</div>
+            <div class="item1">E</div>
+            <div class="item1">F</div>
+            <div class="item1">G</div>
+            <div class="item1">H</div>
+            <div class="item1">I</div>
+        </div>
+    </div>
+    <hr>
+    <h2>Practice Question 2</h2>
+    <img src="../images/flexbox_practice_02.png" alt="ffbq2" height="150vh">
+    <div id="ans2">
+        <div class="container2">
+            <div class="item2">logo</div>
+            <div class="item2">Home</div>
+            <div class="item2">About</div>
+            <div class="item2">Contact</div>
+        </div>
+    </div>
+</body>
+</html>

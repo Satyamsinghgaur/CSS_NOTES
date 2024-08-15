@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/CSS_next_step.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title>CSS NEXT STEPS | DELTA BATCH NOTES</title>
+</head>
+<body>
+<!-- this is header portion -->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>CSS Next Steps</h1>
+    </header>
+
+<!-- this is main portion -->
+    <main>
+        <!-- alpha channel -->
+        <div class="border_down">
+            <h2>Alpha Channel</h2>
+            <p>Sets the <span class="orange_x">Opacity</span> for a color.</p>
+            <img src="../Images/alpha_range.png" alt="alpha range" height="60px" >
+            <div class="code">
+                <span class="orange_x">rgb<span style="color: aqua;">a</span> (255, 255, 255, <span style="color: aqua;">0.3</span>)</span><br>
+                <span style="color: gray;">OR</span><br>
+                <span class="orange_x">background-color: # ff ff ff <span style="color: aqua;">ff</span>;</span>
+            </div>
+            <p><span class="bold_x">Note :-</span><br>
+            &spades; In rgba alpha value varies from "0 to 1".<br>
+            &spades; In hexcode alpha value varies from "00 to ff"</p>
+        </div>
+        <!-- opacity. -->
+        <div class="border_down">
+            <h2>Opacity</h2>
+            <p>Sets the <span class="orange_x">Opacity</span> for the element.</p>
+            <img src="../Images/alpha_range.png" alt="alpha range" height="60px" >
+            <div class="code">
+                <span class="orange_x">opacity: <span style="color: aqua;">0.5</span>;</span>
+            </div>
+        </div>
+        <!-- css transition. -->
+        <div class="border_down">
+            <h2>CSS Transitions</h2>
+            <p>Transitions enable you to define the transition between two states of an element.</p>
+            <img src="../Images/Transition.png" alt="Transition" height="120px" draggable="false" style="border-color: aqua;">
+            <p>Transition has 4 Property :-</p>
+            <ul>
+                <li><span class="bold_x">Transition-property :- </span>What you want to change. <span style="opacity: 0.5;">(e.g.: none, all, width, color, background-color).</span></li>
+                <li><span class="bold_x">Transition-duration :- </span>How long the transition takes. <span style="opacity: 0.5;">(e.g.: 2s for 2 seconds, 2ms for 2 milisecond).</span></li>
+                <li><span class="bold_x">Transition-timing-function :- </span>The speed curve of the transition. <span style="opacity: 0.5;">(e.g.: ease, linear).</span><br><br><img src="../Images/transition-fxn.png" alt="Transition-timing-function" height="270px" draggable="false"></li>
+                <li><span class="bold_x">Transition-delay :- </span>Time to wait before starting the transition (optional).</li>
+            </ul>
+            <h3>Transition Short-hand :</h3>
+            <p>
+                <sapn class="bold_x">Transition: <span style="color: orange;">transition-property</span> <span style="color: aqua;">transition-duration</span> <span style="color: blueviolet;">transition-timing-function</span> <span style="color: yellow;">transition-delay</span>;</sapn>
+            </p>
+            <img src="../Images/transition_shorthand.png" alt="Transition Shorthand" height="30px" draggable="false">
+            <div class="code">
+                <span class="orange_x">transition: <span style="color: aqua;">margin-top 2s ease-in-out 0.2s</span>;</span>
+            </div>
+            <span class="bold_x">Example :</span><br>
+            <span class="bold_x">index.html</span><br>
+            <img src="../Images/Tran_html.png" alt="html_file" height="60px" draggable="false"><br>
+            <span class="bold_x">style.css</span><br>
+            <img src="../Images/Tran_css.png" alt="css_file" height="250px" draggable="false"><br>
+            <span class="bold_x">Output :</span>
+            <div id="transiton">
+                This is an Example div.
+            </div>
+
+
+        </div>
+        <!-- css transform -->
+        <div class="border_down">
+            <h2>CSS Transform</h2>
+            <p>This property lets you <span style="color: yellow;">rotate, scale, move, skew, or translate</span> an element. This allows us to <span style="color: yellow;">change the shape, size, and position of an element</span>  without disturbing the other elements around it. </p>
+            <ul>
+                <li>
+                    <h3>Rotate</h3>
+                    <p>
+                        Rotates the element by a specified degree. (In clockwise direction).<br>
+                        <span class="bold_x">Syntax :-</span>
+                        <span style="color: aqua;">transform: rotate(angle);</span>
+                        <span style="color: aqua;">transform: rotateX(angle);</span>
+                        <span style="color: aqua;">transform: rotateY(angle);</span>
+                        <span style="color: aqua;">transform: rotateZ(angle);</span>
+                    </p>
+                    <div class="code">
+                        <span style="color: orange;">transform: rotate(45deg);</span>
+                    </div>
+                </li>
+                <li>
+                    <h3>Scale</h3>
+                    <p>
+                        Scales the element in size. ('1' is the original size, '2' doubles the size.)<br>
+                        <span class="bold_x">Syntax :-</span>
+                        <span style="color: aqua;">transform: scale(all-axis);</span>, 
+                        <span style="color: aqua;">transform: scaleX(x-axis);</span>, 
+                        <span style="color: aqua;">transform: scaleY(y-axis);</span>, 
+                        <span style="color: aqua;">transform: scale(x,y);</span>
+                    </p>
+                    <div class="code">
+                        <span style="color: orange;">transform: scale(0.5, 2);</span><br>
+                        <span style="color: orange;">transform: scale(0.5);</span>
+                    </div>
+                </li>
+                <li>
+                    <h3>Translate</h3>
+                    <p>
+                        Moves the element along the X (horizontal) and Y (vertical) axes.<br>
+                        &spades;For 'x axis' the +ve value takes element to the left and negative value takes element to the right.<br>
+                        &spades;For 'y axis' the +ve value takes element to the up and negative value takes element to the down.<br><br>
+                        <span class="bold_x">Syntax :-</span>
+                        <span style="color: aqua;">transform: translate(x, y);</span>, 
+                        <span style="color: aqua;">transform: translateX(x);</span>, 
+                        <span style="color: aqua;">transform: translateY(y);</span>
+                    </p>
+                    <div class="code">
+                        <span style="color: orange;">transform: translate (50px, 50px);</span><br>
+                        <span style="color: orange;">transform: translateX (10px);</span><br>
+                        <span style="color: orange;">transform: translateY (10px);</span>
+                    </div>
+                </li>
+                <li>
+                    <h3>Skew</h3>
+                    <p>
+                        Skews the element by the specified angles along the X and Y axes.<br>
+                        <span class="bold_x">Syntax :-</span>
+                        <span style="color: aqua;">transform: skew(a);</span>
+                    </p>
+                    <div class="code">
+                        <span style="color: orange;">transform: skew(30deg);</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- animation -->
+        <div class="border_down">
+            <h2>Animation</h2>
+            <p>To animate CSS elements</p>
+            <h3>Syntax</h3>
+            <div class="code">
+                <span><span style="color: aqua;">@</span><span style="color: yellow;">Keyframe</span> <span style="color: red;">myName</span> {</span><br>
+                    &nbsp;&nbsp;<span><span style="color: yellowgreen;">from</span> {<span style="color: orange;">font-size</span>: <span style="color: mediumaquamarine;">20px</span>;}</span><br>
+                   &nbsp;&nbsp;<span><span style="color: yellowgreen;">to</span> {<span style="color: orange;">font-size</span>: <span style="color: mediumaquamarine;">20px</span>;}</span><br>
+                <span>}</span>
+            </div>
+            <h3>Animation Properties</h3>
+            <ul>
+                <li>
+                    animation-name
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        It is same as the defined animation name in animation syntax. For Exaple in above syntax - "myName".
+                    </details>
+                </li>
+                <li>
+                    animation-duration
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        defines how long an animation should take to complete. <br>If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds). 
+                    </details>
+                </li>
+                <li>
+                    animation-timing-function
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        specifies the speed curve of the animation. <br>It has following values :- 
+                        <ul>
+                            <li>
+                                <span class="bold_x">ease </span>
+                                <p>Specifies an animation with a slow start, then fast, then end slowly (this is default).</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">linear </span>
+                                <p>Specifies an animation with the same speed from start to end.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">ease-in</span>
+                                <p>Specifies an animation with a slow start.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">ease-out</span>
+                                <p>Specifies an animation with a slow end.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">ease-in-out</span>
+                                <p>Specifies an animation with a slow start and end.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">cubic-bezier(n,n,n,n)</span>
+                                <p>Lets you define your own values in a cubic-bezier function</p>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    animation-delay
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        specifies a delay for the start of an animation. <br>
+                        Can be in seconds(s) and miliseconds(ms).
+                    </details>
+                </li>
+                <li>
+                    animation-iteration-count
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        specifies the number of times an animation should run.
+                    </details>
+                </li>
+                <li>
+                    animation-direction
+                    <details style="color: greenyellow;">
+                        <summary style="color: red;">Note</summary>
+                        specifies whether an animation should be played forwards, backwards or in alternate cycles. <br>It has following values :-
+                        <ul>
+                            <li>
+                                <span class="bold_x">normal</span>
+                                <p>The animation is played as normal (forwards). This is default.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">reverse </span>
+                                <p>The animation is played in reverse direction (backwards).</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">alternate </span>
+                                <p>The animation is played forwards first, then backwards.</p>
+                            </li>
+                            <li>
+                                <span class="bold_x">alternate-reverse</span>
+                                <p>The animation is played backwards first, then forwards.</p>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <h3>Animation Shorthand</h3>
+            <div class="code">
+                <span class="orange_x">animation: <span style="color: aqua;">name</span> <span style="color: red;">duration</span> <span style="color: yellow;">timing-function</span> <span style="color: lightcyan;">delay</span> <span style="color: greenyellow;">iteration-count</span> <span style="color: violet;">direction</span>;</span>
+            </div>
+            <h3>% in CSS Animation</h3>
+            <div class="code">
+                <span>@<span style="color: aqua;">keyframe</span> <span style="color: red;">myName</span> {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">0% {font-size: 20px;}</span><span style="color: gray;"> //animation at 0% stage.</span><br>
+                &nbsp;&nbsp;<span class="orange_x">50% {font-size: 30px;}</span><span style="color: gray;"> //animation at 50% stage.</span><br>
+                &nbsp;&nbsp;<span class="orange_x">100% {font-size: 40px;}</span><span style="color: gray;"> //animation at 100% stage.</span><br>
+                <span></span>
+            </div>
+        </div>
+        <!-- <span style="color: aqua;"></span> -->
+        <!-- box shadow. -->
+        <div class="border_down">
+            <h2>Box Shadow</h2>
+            <p>
+                It adds shadow effects around an element's frame. <br>
+                <span class="bold_x">Syntax :- </span>
+                <span style="background-color: black; color: magenta; border: 1px solid white; padding: 3px;">box-shadow: <span style="color: aqua;">x-offset y-offset Blur-Radius</span> <span style="color: blueviolet;">color</span>;</span><br><br>
+                <span style="background-color: black; color: magenta; border: 1px solid white; padding: 3px;">box-shadow: <span style="color: aqua;">x-offset y-offset Blur-Radius Spread-radius</span> <span style="color: blueviolet;">color</span>;</span>
+            </p>
+            <ul>
+                <li><span class="bold_x">Horizontal offset (x-offset) :-</span> Moves the shadow left or right..</li>
+                <li><span class="bold_x">Vertical offset (y-offset) :- </span>Moves the shadow up or down.</li>
+                <li><span class="bold_x">Blur radius :- </span>Controls how blurry the shadow is. The higher the number, the more blurred it will be..</li>
+                <li><span class="bold_x">Spread radius :- </span>Increases or decreases the size of the shadow.</li>
+                <li><span class="bold_x">Color :- </span>The color of the shadow.</li>
+            </ul>
+            <img src="../Images/box_shadow.png" alt="box shadow syntax" height="150px" draggable="false" style="border: 2px solid yellow;">
+            <div class="code">
+                <span style="color: orange;">box-shadow: <span style="color: aqua;">2px 2px 2px</span> <span style="color: blueviolet;">green</span>;</span><br>
+                <span style="color: gray;">OR</span><br>
+                <span style="color: orange;">box-shadow: <span style="color: aqua;">2px 2px 2px 5px</span> <span style="color: blueviolet;">green</span>;</span>
+            </div>
+        </div>
+        <!-- background. -->
+        <div class="border_down">
+            <h2>Background </h2>
+            <p>
+                The background property in CSS is used to set the background of an element. You can control the background's color, image, position, size, and more.
+            </p>
+            <h3>Background Properties :-</h3>
+            <ul>
+                <!-- background-color -->
+                <li>
+                    <span class="bold_x">background-color :-</span> 
+                    <p>Sets the background color.</p>
+                    <span style="font-weight: 400;">Example :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-color: <span style="color: yellow;">#</span><span style="color: aqua;">ffffff</span>;</div>
+                </li><br>
+                <!-- background-image -->
+                <li>
+                    <span class="bold_x">background-image :-</span> 
+                    <p>Sets the background image.</p>
+                    <span style="font-weight: 400;">Syntax :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-image: <span style="color: yellow;">url</span>(<span style="color: aqua;">'www.absoluteimage.com' <span style="color: gray;">OR </span>'Ralative_Image_Address'</span>);</div>
+                    <span style="font-weight: 400;">Example :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-image: <span style="color: yellow;">url</span>(<span style="color: aqua;">".. /somepath /..img. jpg"</span>);</div>
+                </li><br>
+                <!-- background-repeat -->
+                <li>
+                    <span class="bold_x">background-repeat :-</span> 
+                    <p>
+                        Controls if/how the background image repeats. <span style="opacity: 0.7;">(e.g.: no-repeat, repeat-x).</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="bold_x">repeat :- </span>
+                            The background image is repeated both vertically and horizontally.  The last image will be clipped if it does not fit. This is default.
+                        </li>
+                        <li>
+                            <span class="bold_x">repeat-x :- </span>
+                            The background image is repeated only horizontally.
+                        </li>
+                        <li>
+                            <span class="bold_x">repeat-y :- </span>
+                            The background image is repeated only vertically.
+                        </li>
+                        <li>
+                            <span class="bold_x">no-repeat :- </span>
+                            The background-image is not repeated. The image will only be shown once.
+                        </li>
+                        <li>
+                            <span class="bold_x">space :- </span>
+                            The background-image is repeated as much as possible without clipping. The first and last image is pinned to either side of the element, and whitespace is distributed evenly between the images.
+                        </li>
+                        <li>
+                            <span class="bold_x">round :- </span>
+                            The background-image is repeated and squished or stretched to fill the space (no gaps).
+                        </li>
+                    </ul>
+                    <span style="font-weight: 400;">Example :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">
+                        background-repeat: <span style="color: aqua;">repeat</span>; <br>
+                        background-repeat: <span style="color: aqua;">repeat-x</span>; <br>
+                        background-repeat: <span style="color: aqua;">no-repeat</span>;<br>
+                        background-repeat: <span style="color: aqua;">space</span>;<br>
+                        background-repeat: <span style="color: aqua;">round</span>;
+                    </div>
+                </li><br>
+                <!-- background-position -->
+                <li>
+                    <span class="bold_x">background-position :-</span> 
+                    <p>
+                        Defines the starting position of the background image. <span style="opacity: 0.7;">(e.g.: center, top right).</span>
+                    </p>
+                    <span style="font-weight: 400;">Example :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-position: <span style="color: yellow;">center top</span>;</div>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-position: <span style="color: yellow;">50%</span><span style="color: aqua;"> 50%</span>;</div>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-position: <span style="color: aqua;">50px</span><span style="color: yellow;"> 150px</span>;</div>
+                    <h3>Background-position Values :-</h3>
+                    <ul>
+                        <li>left top </li>
+                        <li>left center </li>
+                        <li>left bottom </li>
+                        <li>right top </li>
+                        <li>right center </li>
+                        <li>right </li>
+                        <li>bottom </li>
+                        <li>center top </li>
+                        <li>center </li>
+                        <li>center bottom </li>
+                    </ul>
+                </li> <br>
+                <!-- background-size -->
+                <li>
+                    <span class="bold_x">background-size :-</span> Defines the size of the background image.<span style="opacity: 0.5;"> (e.g.: cover, contain).</span>
+                    <ul>
+                        <li>
+                            <span class="bold_x">auto :-</span>
+                            Default value. The background image is displayed in its original size.
+                        </li>
+                        <li>
+                            <span class="bold_x">length :-</span>
+                            Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto".
+                        </li>
+                        <li>
+                            <span class="bold_x">percentage :-</span>
+                            Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto".
+                        </li>
+                        <li>
+                            <span class="bold_x">cover :-</span>
+                            Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.
+                        </li>
+                        <li>
+                            <span class="bold_x">contain :-</span>
+                            Resize the background image to make sure the image is fully visible.
+                        </li>
+                    </ul>
+                    <span style="font-weight: 400;">Example :-</span><br>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">
+                        background-size: <span style="color: aqua;"> auto</span>; <br>
+                        background-size: <span style="color: aqua;"> contain</span>; <br>
+                        background-size: <span style="color: aqua;"> cover</span>; <br>
+                        background-size: <span style="color: aqua;"> 50%</span>; <br>
+                        background-size: <span style="color: aqua;"> 30px</span>;
+                    </div>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-size: <span style="color: yellow;">50%</span><span style="color: aqua;"> 50%</span>;</div>
+                    <div style="color: greenyellow; border: 1px solid white; background-color: black;">background-size: <span style="color: aqua;">50px</span><span style="color: yellow;"> 150px</span>;</div>
+                </li>
+            </ul>
+            <img src="../Images/background_properties.png" alt="background Properties" height="120px" draggable="false">
+            <h3>Background Short-hand:</h3>
+            <div class="code">
+                <span class="orange_x">background: <span style="color: yellow;">color</span> | <span style="color: aqua;">image</span> | <span style="color: magenta;">position / size</span> | <span style="color: greenyellow;">repeat</span>;</span>
+            </div>
+        </div>
+        <!-- position -->
+        <div class="border_down">
+            <h2>Position</h2>
+            <p>
+               &spades; The position CSS property sets how an element is positioned in a document. <br>
+               &spades; the <span style="color: yellow;">top</span>, <span style="color: yellow;">right</span>, <span style="color: yellow;">bottom</span> and <span style="color: yellow;">left</span> properties determine the final location of positioned elements.
+            </p>
+            <ul>
+                <li>
+                    <h2>Static :- </h2>
+                    <span style="opacity: 0.8;">
+                        <ul>
+                            <li>The default value. Elements are positioned in the normal document flow, with no special positioning.</li>
+                            <li>The top, right, bottom, left, and z-index properties have no effect. </li>
+                            <li>This is the default value.</li>
+                        </ul>
+                    </span>
+                    <div class="code">
+                        <span class="orange_x">position: static;</span>
+                    </div>
+                </li>
+                <li>
+                    <h2>relative :- </h2>
+                    <span style="opacity: 0.8;">
+                        <ul>
+                            <li>The element is positioned relative to its normal position. You can move it using <span style="color: yellow;">top</span>, <span style="color: yellow;">right</span>, <span style="color: yellow;">bottom</span> and <span style="color: yellow;">left</span>, but it still takes up space in its original spot. </li>
+                            <li>the offset is <span style="color: greenyellow;">relative to itself</span> based on the values of top, right, bottom, and left.</li>
+                        </ul>
+                    </span>
+                    <div class="code">
+                        <span class="orange_x">position: relative;</span><br>
+                        <span class="orange_x">top: 100px;</span><br>
+                        <span class="orange_x">left: 100px;</span>
+                    </div>
+                </li>
+                <li>
+                    <h2>absolute :- </h2>
+                    <span style="opacity: 0.8;">
+                        <ul>
+                            <li>The element is positioned relative to its nearest positioned ancestor (an ancestor with <span style="color: aqua;">relative</span>, <span style="color: aqua;">absolute</span>, or <span style="color: aqua;">fixed</span> position). It's removed from the normal document flow, so other elements will act as if it's not there.</li>
+                            <li>The element is removed from the normal document flow, and no space is created for the element in the page layout.</li>
+                            <li>It is positioned <span style="color: yellow;">relative to its closest positioned ancestor</span>, if any; otherwise, it is placed relative to the initial containing block.</li>
+                        </ul><br>
+                        <div>
+                            <span class="bold_x">Note :-</span>
+                            <p>We will always keep absolute element (div) inside the relative container (div). It will limit the absolute element positioning.</p>
+                            <img src="../Images/relative_absolute.png" alt="rative and absolute image" height="300px" style="border: 2px solid rgb(29, 163, 100);">
+                        </div>
+                    </span>
+                    <div class="code">
+                        <span class="orange_x">position: absolute;</span><br>
+                        <span class="orange_x">top: 100px;</span><br>
+                        <span class="orange_x">left: 100px;</span>
+                    </div>
+                </li>
+                <li>
+                    <h2>fixed :- </h2>
+                    <span style="opacity: 0.8;">
+                        <ul>
+                            <li>The element is positioned relative to the browser window, so it stays in the same spot even when the page is scrolled.</li>
+                            <li>The element is removed from the normal document flow, and no space is created for the element in the page layout.</li>
+                            <li>It is positioned <span style="color: yellow;">relative to the initial containing block</span> established by the viewport.</li>
+                        </ul>
+                        <div class="code">
+                            <span class="orange_x">position: fixed;</span><br>
+                            <span class="orange_x">top: 100px;</span><br>
+                            <span class="orange_x">left: 100px;</span>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <h2>sticky :- </h2>
+                    <span style="opacity: 0.8;">
+                        The element switches between <span style="color: aqua;">relative</span> and <span style="color: aqua;">fixed</span> positioning depending on the user's scroll position. It "sticks" in place when a certain scroll position is reached.
+                    </span>
+                    <div class="code">
+                        <span class="orange_x">position: sticky;</span><br>
+                        <span class="orange_x">top: 100px;</span><br>
+                        <span class="orange_x">left: 100px;</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- link to practice file of this chapter -->
+        <Div class="border_down">
+            <h4>Practice file is given below:- </h4>
+            <a href="../Exercise/html_files/css_NextStep_Practice.html" target="_blank">CLICK HERE</a>
+        </Div>
+        <Div class="border_down">
+            <h4>Card Hover Effect Practice :</h4>
+            <a href="../Exercise/html_files/card_hover_effect.html" target="_blank">CLICK HERE</a>
+        </Div>
+        <Div class="border_down">
+            <h4>Creating a 'Simple Smiley face' for practice:</h4>
+            <a href="../Exercise/html_files/smiley.html" target="_blank">CLICK HERE</a>
+        </Div>
+    </main>
+
+    <!-- <span style="color: yellow;"></span> -->
+<!-- this is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+</body>
+</html> 

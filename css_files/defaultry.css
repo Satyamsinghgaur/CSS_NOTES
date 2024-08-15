@@ -1,0 +1,139 @@
+/* CSS boilerplate */
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ */
+
+
+/* CSS Code. */
+body{
+    background-color: #dbd8e3;
+    font-family: monospace;
+    padding-left: 10px;
+}
+
+h1{
+    background-color: #2a2438;
+    color: #dbd8e3;
+    text-align: center;
+}
+
+main{
+    background-color: #5c5470;
+}
+
+footer{
+    margin: 5px 5px 5px 5px;  
+    background-color: #5c5470;
+}
+
+div{
+    padding: 10px 10px 10px 10px; 
+    background-color: #352f44;
+    color: white;
+}
+
+p{
+    background-color: #2a2438;
+    color: #dbd8e3;
+}
+hr{
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+}
+table, td, th {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+/* these are class css */
+.code{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    border: solid;
+    margin: 10px 10px 10px 10px;
+
+}
+.output{
+    background-color: gray;
+    color: white;
+    height: auto;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    border: solid;
+    margin: 10px 10px 10px 10px;
+}
+
+.border_down{
+    border-bottom: solid;
+}
+
+.bold_x{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.orange_x {
+    color: orange;
+}
+/* these are id selectors */
+#home_icon{
+    height: 10px;
+    width: 10px;
+}
+
+#footer_css{
+    padding-left: 5px;
+}
+
+/* these are the link css */
+/* a normal, unvisited link */
+a:link{
+    color: orange;
+    text-decoration: none;
+}
+/* a link the user has visited */
+a:visited{
+    color: orange;
+    text-decoration: none;
+}
+/* a link when the user mouses over it */
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+/* a link the moment it is clicked */
+a:active{
+    color: red;
+    text-decoration: none;
+}
+
+
+/* NOTES :- */
+
+/*  id selector - # and 
+    class selector - .  */
+
+
+/* color pallet for this website -
+
+1. #dbd8e3
+2. #5c5470
+3. #352f44
+4. #2a2438
+
+*/

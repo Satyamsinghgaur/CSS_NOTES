@@ -1,0 +1,24 @@
+th, td, table {
+    padding: 3px;
+    background-color: blueviolet;
+}
+
+img {
+    border: 2px solid white;
+}
+
+
+/* animation template */
+@keyframes colorAnimate {
+    from { background-color: aquamarine; }
+    to { background-color: red; }
+}
+
+/* animation Properties */
+element {
+    animation-name: colorAnimate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+}

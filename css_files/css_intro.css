@@ -1,0 +1,21 @@
+#home_icon{
+    height: 10px;
+    width: 10px;
+}
+
+#footer_css{
+    padding-left: 5px;
+}
+
+.border_down{
+    border-bottom: solid;
+}
+
+div[id = "myId_x"] p{
+    color: green;
+}
+
+input[type= "radio"]:checked + label{
+    color:red;
+    font-weight: bold;
+}

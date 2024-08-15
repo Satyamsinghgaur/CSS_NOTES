@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/css_intro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title>CSS INTRODUCTION | DELTA BATCH NOTES</title>
+</head>
+<body>
+
+<!-- this is header portion -->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>CSS Introduction</h1>
+    </header>
+
+<!-- This is the main portion -->
+    <main>
+        <!-- This section shows css Format -->
+        <div class="border_down">
+            <h2>Basic Format of CSS</h2> 
+            <p>
+                In CSS we have following things:-
+                <ul>
+                    <li><strong>Selector :-</strong> Selector is used to define the object that we want to apply CSS Property.</li>
+                    <li><strong>CSS Code :-</strong> It is always written inside the curly brackets. ie. - "<strong>&#x007B</strong>"" & "<strong>&#x007D</strong>"".</li>
+                    <li>
+                        <strong>CSS Declaration :-</strong> There are two styling elemtnts :- 
+                        <ol>
+                            <li><strong>Property :- </strong> This shows that, what kind of CSS we want to apply.</li>
+                            <li><strong>Value :- </strong> This show that what is the vlaue of that CSS Property.</li>
+                        </ol>
+                        <strong>Note :- </strong> We close "CSS Declaration" by <strong>Semi-colon ( ; ).</strong> and we separate the property and value by <strong>colon ( : ).</strong>
+                    </li>
+                </ul>
+                <div class="code">
+                    h1{ <br>
+                        &nbsp;<span style="color: orange;">color : red; <br></span>
+                    }
+                </div><br>
+                <!-- here is the image -->
+                <img src="../Images/css_format.png" alt="css format" height="150px" width="200px" draggable="false">
+            </p>
+            <P>
+                We Can visit following link to see all the CSS Properties :- <br> 
+                &diam; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">MDN CSS Properties</a>
+            </P> 
+        </div>
+        <!-- this shows css linking method to htmnl File -->
+        <div class="border_down">
+            <h2>How to Include CSS to our HTML File</h2>
+            <p>
+                We Have three methods to include CSS to HTML :- 
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Inline CSS :- </strong> Writing Styles directly inline on each element. In this every property is separated by <strong>Semi-colon( ; )</strong>. Its drawback is, in this we have to style every html element.<br>
+                        </p>
+                        <div class="code">&lt;h1 <span style="color: orange;">style="color:red; background-color:white;"</span>&gt; <br> &nbsp; This is the Inline CSS <br> &lt;/h1&gt;</div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Internal CSS :- </strong> Style is added using the <strong>&lt;style&gt;</strong>tage in the <strong>head</strong> section in the same document.It has the drawback that it only add style to only one page.
+                        </p>
+                        <div class="code">
+                            <span style="color: gray;">&lt;!--This is head section--&gt;</span> <br>
+                            &lt;head&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">&lt;!--Here CSS is written.&gt;</span> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: orange;">color:red; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:white;</span><br>
+                           &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                            &lt;/head&gt;<br><br>
+                            <span style="color: gray;">&lt;!--This is body section--&gt;</span> <br>
+                            &lt;body&gt;<br>
+                            &lt;/body&gt;
+                        </div>
+                    </li>
+                    <li>
+                        <p><strong>External CSS :- </strong> Writing CSS in a separate document & linking it with the HTML file. We use <strong>&lt;link&gt;</strong> tag in "head" tag to link html file to css_file. in link tag "rel" defines what type of relation does our "href" have with html document.</p>
+                        <ul>
+                            <li><h3>"index.html" file</h3>
+                                <div class="code">
+                                    <span>
+                                        <span style="color: gray;">&lt;!--This is head section--&gt;</span> <br>
+                                        &lt;head&gt;<br>
+                                        &nbsp;&nbsp;<span style="color: gray;">&lt;!--Here css_file is linked with html document.--&gt;</span> <br>
+                                        &nbsp;&nbsp;&lt;link <span style="color:red;">rel</span><span style="color: orange;">="stylesheet" </span><span style="color:red ;">href</span><span style="color:orange ;">="styles.css"</span>&gt;<br>
+                                        &lt;/head&gt;<br><br>
+                                        <span style="color: gray;">&lt;!--This is body section--&gt;</span> <br>
+                                        &lt;body&gt;<br>
+                                        &lt;/body&gt;
+                                    </span>
+                                </div>   
+                            </li>
+                            <li><h3>"styles.css" file</h3>
+                                <div class="code">
+                                    h1{<br>
+                                    <span style="color: orange;">&nbsp;color:black;<br></span>
+                                    <span style="color: orange;">&nbsp;text-align: center;<br></span>
+                                    }
+                                </div>
+                            </li>
+                        </ul>
+                        <p><h3>Note :- </h3> The Cascading Order is given below :- <br><strong>Inline CSS &gt; External & Internal CSS &gt; Browser default</strong> <br>It means <Strong>Inline CSS</Strong> has the highest priority and it will override other styles.</p>
+                    </li>
+                </ol>
+            </p>
+        </div>
+        <!-- this show css selectors -->
+        <div class="border_down">
+            <h2>Selectors</h2>
+            <p>
+                CSS selectors are like addresses that tell the browser which HTML elements to style. These are used to select a group of elements or a particular element for styling purpose.
+                <br><br><span class="bold_x">Importance order of Selectors :-</span><br><span style="background-color: aliceblue; color: black;">ID &gt;class&gt;Element</span>
+            </p>
+            <h3>Types of Selectors</h3>
+            <p>There are different type of selectors :-</p>
+            <ul>
+                <!-- element Selector -->
+                <li>
+                    <span class="bold_x">Element Selector :-</span> : Targets all elements of a specific type.
+                    <div class="code">
+                        <span>p {</span> <br>
+                            &nbsp;<span style="color: orange;">color: blue;</span><br>
+                        <span>}</span>
+                    </div>
+                    <p>This styles all &lt;p&gt; (paragraph) elements to have blue text.</p>
+                </li>
+                <!-- class Selector -->
+                <li>
+                    <span class="bold_x">class Selector :-</span> : Targets elements with a specific class. We use "Full-stop" or "Period" ( <span style="color: greenyellow;">.</span> ) to select or define the class in CSS code.
+                    <div class="code">
+                        <span><span style="color: greenyellow;">.</span>highlight {</span> <br>
+                            &nbsp;<span style="color: orange;">background-color: yellow;</span><br>
+                        <span>}</span>
+                    </div>
+                    <p>This styles any element with the class <span class="bold_x">highlight</span> to have a yellow background.</p>
+                </li>
+                <!-- ID Selector -->
+                <li>
+                    <span class="bold_x">ID Selector :-</span> :  Targets a single element with a specific ID. We use "hash" or "octothorpe" or "Numero sign" ( <span style="color: greenyellow;">#</span> ) to select or define a ID in CSS code.
+                    <div class="code">
+                        <span><span style="color: greenyellow;">#</span> header {</span> <br>
+                            &nbsp;<span style="color: orange;">font-size: 24px;</span><br>
+                        <span>}</span>
+                    </div>
+                    <p>This styles the element with the ID <span class="bold_x">header</span> to have a font size of 24px.</p>
+                </li>   
+                <!-- universal Selector -->
+                <li>
+                    <span class="bold_x">Universal Selector :-</span> : To select everything in a document. We use "Asterisk" ( <span style="color: greenyellow;">*</span> ) to select or define all document in CSS code.
+                    <div class="code">
+                        <span><span style="color: greenyellow;">*</span> {</span> <br>
+                            &nbsp;<span style="color: orange;">Property : value;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+                <!-- Descendant  Selector -->
+                <li>
+                    <span class="bold_x">Descendant Selector :-</span> : Targets elements that are inside other elements.<br>
+                    <img src="../Images/descendent_selector.png" alt="descendant selector" height="120px" draggable="false"><br>
+                    <span class="bold_x">Note :-</span> If we want to select a child of an id then we will use following method - 
+                    <h4>index.html -</h4>
+                    <div class="code">
+                        <span>&lt;div <span style="color: aqua;">id</span>="<span style="color: yellow;">myId</span>"&gt; </span><br>
+                        <span>&nbsp;&nbsp;&lt;p&gt; This is a paragraph. &lt;/p&gt;</span><br>
+                        <span>&lt;/div&gt;</span>
+                    </div>
+                    <h4>styles.css -</h4>
+                    <div class="code">
+                        <span style="color: gray;">&lt;!-- Method 01 --&gt;</span><br>
+                        <span>#myId p {</span><br>
+                        <span class="orange_x">color: green;</span><br>
+                        <span>}</span><br><br>
+                        <span style="color: gray;">&lt;!-- Method 02 --&gt;</span><br>
+                        <span>div <span style="color: green;">[id = "myId"]</span> p {</span><br>
+                        <span class="orange_x">color: green;</span><br>
+                        <span>}</span>
+                    </div>
+                    <div id="myId_x">
+                        <h4>output -</h4>
+                        <p> This is a paragraph.</p>
+                    </div>
+                    <p><span class="bold_x">Note :- </span>It can be multi-level.</p>
+                    <div class="code">
+                            <span style="color: gray;">&lt;!-- Here myId is level-1, ul is level-2, li is level-3, p is level-4. --&gt;</span><br>
+                            <span># <span style="color: green;">myId</span> <span style="color: yellow;">ul</span> <span style="color: yellowgreen;">li</span> p{</span><br>
+                            &nbsp;&nbsp;<span class="orange_x">color: green;</span><br>
+                            <span>}</span>
+                    </div>
+                </li>
+                <!-- sibling Selector -->
+                <li>
+                    <span class="bold_x">Adjacent Sibling Selector (or Adjacent Sibling Combinator) :-</span> Selects an element that is immediately after another specified element. <br>
+                    <img src="../Images/sibling_selector.png" alt="adjacent sibling combinator" height="120px" draggable="false">
+                    <h4>index.html</h4>
+                    <div class="code">
+                        <span>&lt;div <span style="color: aqua;">id</span>="<span style="color: yellow;">myId</span>"&gt; </span><br>
+                        <span>&nbsp;&nbsp;&lt;p&gt; This is a paragraph. &lt;/p&gt;</span><br>
+                        <span>&lt;/div&gt;</span><br><br>
+                        <span>&lt;p&gt; This is adjacent paragraph to the myId div. &lt;/p&gt;</span>
+                    </div>
+                    <h4>style.css</h4>
+                    <div class="code">
+                        <span style="color: gray;">&lt;!-- Here "ID = myId" and p are siblings then in p the style will be applied. --&gt;</span><br>
+                        <span># <span style="color: green;">myId</span> + <span style="color: yellowgreen;">p</span> {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x">color: orange;</span><br>
+                        <span>}</span>
+                    </div>
+                    <h4>Output :-</h4>
+                    <div class="output">
+                        <span>This is a paragraph.</span>
+                        <br><span style="color: orange;">This is adjacent paragraph to the myId div.</span>
+                    </div>
+                </li>
+                <!-- child Selector -->
+                <li>
+                    <span class="bold_x">"Child Selector" or "Child Combinator" :- </span> Selects elements that are direct children of a specified element.
+                    <br><img src="../Images/child_combinator.png" alt="child combinator" height="120px" draggable="false">
+                    <div class="code">
+                        <span style="color: gray;">&lt;!-- Here p is the child of "ID = myId", then in p the style will be applied. --&gt;</span><br>
+                        <span> # <span style="color: green;">myId</span> &gt; <span style="color: yellowgreen;">p</span> {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x">color: orange;</span><br>
+                        <span>}</span>
+                    </div>
+                    <h4>Differnce between "Descendant Selector" & "Child Selector"</h4><p>The main difference between the child selector and the descendant selector in CSS is in the way they select elements based on their relationship in the HTML hierarchy.</p>
+                    <table border="solid" style="background-color: gray;">
+                        <thead>
+                            <tr>
+                                <th>Point</th>
+                                <th>Descendant Selector</th>
+                                <th>Child Selector</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Syntax</td>
+                                <td>" <span style="color: greenyellow;">ancestor</span> <span style="color: yellow;">descendant</span> "</td>
+                                <td>" <span style="color: greenyellow;">parent</span> &gt; <span style="color: yellow;">child</span> "</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>Selects all elements that are descendants of a specified ancestor element, regardless of how deep the descendants are nested.</td>
+                                <td>Selects only the direct children of a specified parent element.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Example</td>
+                                <td><img src="../Images/descendent_selector_ex.png" alt="des sele Example" height="70px" draggable="false"></td>
+                                <td><img src="../Images/child_combinator_example.png" alt="child combinator example" height="70px" draggable="false"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <!-- attribute Selector -->
+                <li>
+                    <span class="bold_x">Attribute Selector :- </span>Selects elements with a specific attribute or Selects elements based on the presence or value of a given attribute. <br><img src="../Images/attribute_selector.png" alt="attribute selector" height="120px" draggable="false">
+                    <div class="code">
+                        <span style="color: gray;">&lt;!-- Syntax: --&gt;</span><br>
+                        <span> HTML_Element [<span style="color: green;">attribute</span> = <span style="color: yellowgreen;">value</span>] {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x">property: value;</span><br>
+                        <span>}</span>
+                    </div>
+                    <h4>Example</h4>
+                    <div class="code">
+                       
+                        <span> input[<span style="color: green;">type</span> = <span style="color: yellowgreen;">"password"</span>] {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x">background-color: yellow;</span><br>
+                        <span>}</span><br><br>
+                        <span style="color: gray;">&lt;!-- "OR" --&gt;</span><br><br>
+                        <span> input[<span style="color: green;">type</span>] {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x">background-color: yellow;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+                <!-- pseudo-class Selector -->
+               <li>
+                <span class="bold_x">Pseudo-class Selector :- </span>Selects elements based on their state or position. <br>&diam; Pseudo-class selectors in CSS are used to define a special state of an element. They are prefixed with a colon (:) and are used to style elements based on their state, position in the document, or user interactions. <br>&diam; A Keyword added to a selector that specifies a <span style="color: aqua;">special state</span> of the selected element(s).
+                <br><span class="bold_x">Examples :-</span><br>
+                <ul>
+                    <h2>Anchor Pseudo-classes</h2>
+                    <li>
+                        <h3> :hover:- </h3>
+                        <p> mouse over link. </p>
+                        <div class="code">
+                            <span><span  style="color: yellow;">a:hover </span>{ </span><br>
+                            &nbsp;<span style="color: orange;">color: #FF00FF;</span>
+                            <br><span>}</span><br><br>
+                            <span style="color: gray;">&lt;!-- It also can be used in other elements. --&gt;</span><br><br>
+                            <span><span  style="color: yellow;">div:hover </span>{ </span><br>
+                            &nbsp;<span style="color: orange;">color: #FF00FF;</span>
+                            <br><span>}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3> :active:- </h3>
+                        <p> selected link. </p>
+                        <div class="code">
+                            <span><span  style="color: yellow;">a:active {</span>{ </span><br>
+                            &nbsp;<span style="color: orange;">color: #0000FF;</span>
+                            <br><span>}</span><br><br>
+                            <span style="color: gray;">&lt;!-- It also can be used in other elements. --&gt;</span><br><br>
+                            <span><span  style="color: yellow;">button:active {</span>{ </span><br>
+                            &nbsp;<span style="color: orange;">background-color: hotpink;</span>
+                            <br><span>}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3> :visited:- </h3>
+                        <p> visited link. </p>
+                        <div class="code">
+                            <span><span  style="color: yellow;">a:visited </span>{ </span><br>
+                            &nbsp;<span style="color: orange;">color: #00FF00;</span>
+                            <br><span>}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3> :link:- </h3>
+                        <p> unvisited link. </p>
+                        <div class="code">
+                            <span><span  style="color: yellow;">a:link </span>{ </span><br>
+                            &nbsp;<span style="color: orange;">color: #FF0000;</span>
+                            <br><span>}</span>
+                        </div>
+                    </li>
+                    <h2>For Radio & checkbox </h2>
+                    <li>
+                        <h3> :checked:- </h3>
+                        <p> Selects every checked element </p>
+                        <div class="code">
+                            <span style="color: gray;">&lt;!-- Here radio and label are siblings and we want to change in label. --&gt;</span><br>
+                            <span><span  style="color: yellow;">input[type= "radio"]:checked</span> + <span style="color: green;">label </span>{ </span><br>
+                            <span style="color: gray;">&lt;!-- Here Here it means that the radio which is checked, its sibling label will be styled. --&gt;</span><br>
+                            &nbsp;<span style="color: orange;">color:red;</span>
+                            <br><span>}</span>
+                        </div>
+                        <h4>Example :</h4>
+                        <span class="bolx_x">Index.html</span><br>
+                        <img src="../Images/radio_psuedoclass_html.png" alt="Html code" height="130px" draggable="false"><br>
+                        <span class="bolx_x">styles.css</span><br>
+                        <img src="../Images/radio_psuedoclass.png" alt="css code" height="90px" draggable="false"><br>
+                        <span class="bolx_x">Output</span><br>
+                        <div class="output">
+                            <span class="bold_x">Do you agree ?</span><br>
+                            <input type="radio" id="yes" name="agreement">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="agreement">
+                            <label for="no">No</label>
+                        </div>
+                    </li>
+                    <h2>For normal use</h2>
+                    <li>
+                        <h3>:<span style="color: aqua;">n</span>th-of-type() :-</h3>
+                        <p>Selects every element that is described (In the code) element of its parent</p>
+                        <div class="code">
+                            <span style="color: gray;">&lt;!-- We want to style 5th li of the list (ul) --&gt;</span><br>
+                            <span>ul>li: <span  style="color: aqua;">nth-of-type</span> ( <span style="color: green;">5 </span><span> ) </span>{ </span><br>
+                           &nbsp;<span style="color: orange;">background-color: <span style="color: red;">red</span>;</span>
+                            <br><span>}</span><br><br>
+                            <span style="color: gray;">&lt;!-- We want to style every even li of the list (ul) of id "MyList" --&gt;</span><br>
+                            <span># <span style="color: yellow;">MyList</span> >li : <span  style="color: aqua;">nth-of-type</span> ( <span style="color: green;">2n </span><span> ) </span>{ </span><br>
+                           &nbsp;<span style="color: orange;">background-color: <span style="color: red;">red</span>;</span>
+                            <br><span>}</span>
+                        </div>
+                    </li>
+                </ul>
+               </li>
+               <!-- Pseudo-element selector -->
+                <li>
+                    <span class="bold_x">Pseudo-element Selector :- </span> Selects a specific part of an element. <br>
+                    A keyword added to a selector that lets you style a <span style="color: yellowgreen;">specific part </span> of the selected element(s).
+                    <span class="bold_x">ie> :-</span>
+                    <ul>
+                        <li><span class="bold_x">::first-letter -</span> Add style into first letter of selected element.</li>
+                        <li><span class="bold_x">::first-line -</span> Add style into first line of selected element.</li>
+                        <li><span class="bold_x">::selection -</span> To style the selected mouse portion of the webpage.</li>
+                    </ul>
+                    <div class="code">
+                        <span>h1<span style="color: yellow;">::first-letter</span> {</span><br>
+                        &nbsp;&nbsp;<span style="color: orange;">color:red;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>                
+            </ul>
+        </div>
+        <!-- this show css Cascading property -->
+         <div class="border_down">
+            <h2>CSS Cascading StyleSheets</h2>
+            <p>
+                <span class="bold_x">Qs. :- What is cascade in CSS?</span>
+                <br><span class="bold_x">Ans :-</span> The <span style="color: aqua;"> CSS Cascade Algorithm</span>'s job is to select CSS decoration in order to determine the correct values for CSS properties. <br>It is always applied on same element.
+            </p>
+            <img src="../Images/cas1.png" alt="cascading properties" height="150px" draggable="false"><br>
+            <span class="bold_x">Note :-</span> in above example always that style will be aplied which is written in the last. <br>
+         </div>
+         <!-- this shows slector Specificity -->
+         <div class="border_down">
+            <h2>Selector Specificity</h2>
+            <p>
+                <span class="bold_x">Qs. :- What is Specificity?</span>
+                <br><span class="bold_x">Ans :-</span> Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration. <br>It is a three digit no., Which is calculated by following figure :-
+                <br><br><img src="../Images/selctor_specifity.png" alt="slector sepecificity" height="150px" draggable="false"> <br><br>
+                In above figure "id" defines the <span style="color: green;">hundred</span>th place, "class" defines the <span style="color: green;">Ten</span>th place & element desides the <span style="color: green;">Unit</span>'s place. <br><br>
+                It means folling order is used for cascading :- <br>
+                <ol>
+                    <li><span style="color: yellow;">ID </span>&gt;<span style="color: yellow;"> Class </span>&gt;<span style="color: yellow;"> Element</span></li>
+                    <li><span style="color: yellow;">More Selectors </span>&gt;<span style="color: yellow;"> Less Selectors. </span></li>
+                    <li>If Specificity = same <br>Then apply cascading. </li>
+                </ol>
+                <br><br>
+                <span class="bold_x">Example :-</span><br>
+                <img src="../Images/selctor_specifity_exa,ple.png" alt="selctor_specifity" height="250px" draggable="false">
+            </p>
+         </div>
+         <!-- this shows the Inline Specificity -->
+          <h2>Inline Specificity</h2>
+          <div class="border_down">
+            <p>
+                Inline styles are more specific than id.
+                <br><img src="../Images/Inline_specificity.png" alt="inline Specificity" height="100px" draggable="false">
+             </p>
+         </div>
+         <a href="../Exercise/html_files/Quora_practice.html" target="_blank">QUORA PRACTICE WEBPAGE | DELTA BATCH</a>
+
+<!-- 
+        <div class="border_down">
+
+        </div> -->
+    </main>
+
+<!-- This is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+
+    <!-- &lt; &gt; -->
+</body>
+</html>

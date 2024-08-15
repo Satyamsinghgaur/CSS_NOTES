@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/CSS_flexbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title>CSS FLEXBOX | DELTA BATCH NOTES</title>
+</head>
+<body>
+<!-- this is header portion -->
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>CSS Flexbox</h1>
+    </header>
+
+<!-- this is main portion -->
+    <main>
+        <!-- flexbox Introduction -->
+        <div class="border_down">
+            <h2>What is Flexbox?</h2>
+            <span class="bold_x">(Flexible Box Layout)</span>
+            <p>It is a one-dimensional layout method for arranging items in rows or columns. It makes website <span style="color: aqua;">Responsive</span>.</p>
+        </div>
+
+        <!-- flex Model -->
+        <div class="border_down">
+            <h2>Flex Model</h2>
+            <img src="../Images/flex_model.png" alt="flex_model" height="200px" draggable="false" title="Here Direction = row">
+        </div>
+
+        <!-- flexBox Elements -->
+        <div class="border_down">
+            <h2>Flexbox Elements</h2>
+            <p>There are two flexbox Elements :-</p>
+            <ul>
+                <li>
+                    <h3>Flex Container</h3>
+                    <p>The parent element where flexbox is applied. It contains flex items.</p>
+                </li>
+                <li>
+                    <h3>Flex Items</h3>
+                    <p>The child elements inside the flex container that are arranged using flexbox.</p> 
+                </li>
+            </ul>
+            <img src="../Images/felxbox.png" alt="flexbox" height="70px" draggable="false" style="border-color: yellow;">
+            
+            <p>The element above represents a flex container (the blue area) with three flex items.</p>
+            <img src="../Images/flex_container.png" alt="flexbox" height="200px" draggable="false" style="border-color: yellow;">
+            <P>
+                <span class="bold_x">Note :</span>
+                We have to give <span style="color: orange; border: 2px solid white; background-color: black; padding: 0 3px;">display: flex;</span> property to the "<span style="color: aqua;">flex container</span>". <br>
+                <img src="../Images/flex_initialization.png" alt="flexbox html" height="100px" draggable="false"><br>
+                <img src="../Images/flex_initialization_css.png" alt="flexbox css" height="70px" draggable="false">
+            </P>
+        </div>
+        <!-- flex - container property -->
+        <div>
+            <span class="heading">Flex-Parent Properties (Container Properties)</span>
+            <!-- flexbox Direction -->
+            <div class="border_down">
+                <h2>Flex-Direction</h2>
+                <p>
+                    <span>It sets <span style="color: #ebaf42;">how flex items are placed</span> in the flex container, along which axis and direction.</span>
+                    <br>For Flex direction we use follwing property on main and cross axis :-
+                </p>
+                <ul>
+                    <li>
+                        <h3>Main axis</h3>
+                        <ul>
+                            <li>
+                                <span class="bold_x">Left to Right</span><br>
+                                <span style="color: orange; background-color: black; border: 2px solid white; padding: 3px; display: inline-block; margin: 2px;">
+                                    flexbox-direction: row;
+                                </span>
+                            </li>
+                            <li>
+                                <span class="bold_x">Right to Left</span><br>
+                                <span style="color: orange; background-color: black; border: 2px solid white; padding: 3px; display: inline-block; margin: 2px;">
+                                    flexbox-direction: row-reverse;
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Cross axis</h3>
+                        <ul>
+                            <li>
+                                <span class="bold_x">Top to Bottom</span><br>
+                                <span style="color: orange; background-color: black; border: 2px solid white; padding: 3px; display: inline-block; margin: 2px;">
+                                    flexbox-direction: column;
+                                </span>
+                            </li>
+                            <li>
+                                <span class="bold_x">Bottom to Top</span><br>
+                                <span style="color: orange; background-color: black; border: 2px solid white; padding: 3px; display: inline-block; margin: 2px;">
+                                    flexbox-direction: column-reverse;
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- justify-content -->
+            <div class="border_down">
+                <h2>Justify-Content</h2>
+                <p>Tells how the browser <span style="color: #ebaf42;">distributes space</span> between and around content items along the main-axis.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>center </td>
+                            <td>aligns the flex items at the center of the container.</td>
+                            <td style="color: orange; background-color: black;">justify-content: center;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>ligns the flex items at the beginning of the container (this is default).</td>
+                            <td style="color: orange; background-color: black;">justify-content: flex-start;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-end</td>
+                            <td>aligns the flex items at the end of the container.</td>
+                            <td style="color: orange; background-color: black;">justify-content: flex-end;</td>
+                        </tr>
+                        <tr>
+                            <td>space-around</td>
+                            <td>displays the flex items with space before, between, and after the lines.</td>
+                            <td style="color: orange; background-color: black;">justify-content: space-around;</td>
+                        </tr>
+                        <tr>
+                            <td>space-between</td>
+                            <td>displays the flex items with space between the lines.</td>
+                            <td style="color: orange; background-color: black;">justify-content: space-between;</td>
+                        </tr>
+                        <tr>
+                            <td>space-evenly</td>
+                            <td>displays the flex items with space before, between, and after the lines evenly.</td>
+                            <td style="color: orange; background-color: black;">justify-content: space-evenly;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- flex-wrap -->
+            <div class="border_down">
+                <h2>flex-wrap</h2>
+                <p>Sets whether flex items are <span style="color: #ebaf42;">forced onto one line or can wrap</span> onto multiple lines.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>wrap</td>
+                            <td>specifies that the flex items will wrap if necessary.</td>
+                            <td style="color: orange; background-color: black;">flex-wrap: wrap;</td>
+                        </tr>
+                        <tr>
+                            <td>nowrap</td>
+                            <td>specifies that the flex items will not wrap (this is default).</td>
+                            <td style="color: orange; background-color: black;">flex-wrap: nowrap;</td>
+                        </tr>
+                        <tr>
+                            <td>wrap-reverse</td>
+                            <td>specifies that the flexible items will wrap if necessary, in reverse order.</td>
+                            <td style="color: orange; background-color: black;">flex-wrap: wrap-reverse;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- align-items -->
+            <div class="border_down">
+                <h2>align-items</h2>
+                <p>Distributes our items along the cross axis. <br> used to align the flex items.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>center</td>
+                            <td>aligns the flex items in the middle of the container.</td>
+                            <td style="color: orange; background-color: black;">align-items: center;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>aligns the flex items at the top of the container.</td>
+                            <td style="color: orange; background-color: black;">align-items: flex-start;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-end</td>
+                            <td>aligns the flex items at the bottom of the container.</td>
+                            <td style="color: orange; background-color: black;">align-items: flex-end;</td>
+                        </tr>
+                        <tr>
+                            <td>stretch</td>
+                            <td>stretches the flex items to fill the container (this is default).</td>
+                            <td style="color: orange; background-color: black;">align-items: stretch;</td>
+                        </tr>
+                        <tr>
+                            <td>baseline</td>
+                            <td>aligns the flex items such as their baselines aligns.</td>
+                            <td style="color: orange; background-color: black;">align-items: baseline;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- align-content -->
+            <div class="border_down">
+                <h2>align-content</h2>
+                <p>it sets the distribution of <span style="color: #ebaf42;">space between and around</span> content items along a flexbox's cross-axis. <br>used to align the flex lines.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>space-between</td>
+                            <td>displays the flex lines with equal space between them.</td>
+                            <td style="color: orange; background-color: black;">align-content: space-between;</td>
+                        </tr>
+
+                        <tr>
+                            <td>space-around</td>
+                            <td>displays the flex lines with space before, between, and after them.</td>
+                            <td style="color: orange; background-color: black;">align-content: space-around;</td>
+                        </tr>
+                            <td>space-evenly</td>
+                            <td>displays the flex lines with equal space between them evenly.</td>
+                            <td style="color: orange; background-color: black;">align-content: space-evenly;</td>
+                        </tr>
+                        <tr>
+                            <td>stretch</td>
+                            <td>stretches the flex lines to take up the remaining space (this is default).</td>
+                            <td style="color: orange; background-color: black;">align-content: stretch;</td>
+                        </tr>
+                        <tr>
+                            <td>baseline</td>
+                            <td>align the content of a flex container along the baseline of the items. .</td>
+                            <td style="color: orange; background-color: black;">align-content: baseline;</td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>displays the flex lines in the middle of the container.</td>
+                            <td style="color: orange; background-color: black;">align-content: center;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>displays the flex lines at the start of the container.</td>
+                            <td style="color: orange; background-color: black;">align-content: flex-start;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-end</td>
+                            <td>displays the flex lines at the end of the container.</td>
+                            <td style="color: orange; background-color: black;">align-content: flex-end;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- flex - items property -->
+        <div id="item_property">
+            <span class="heading">Flex-Child Properties (Items Properties)</span>
+            <!-- align-self. -->
+            <div class="border_down">
+                <h2>align-self</h2>
+                <p>Aligns an item along the <span style="color: #ebaf42;">Cross Axis.</span>. <br>specifies the alignment for the selected item inside the flexible container.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>auto</td>
+                            <td>Default. The element inherits its parent container's align-items property, or "stretch" if it has no parent container.</td>
+                            <td style="color: orange; background-color: black;">align-self: auto;</td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>The element is positioned at the center of the container.</td>
+                            <td style="color: orange; background-color: black;">align-self: center;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>The element is positioned at the beginning of the container.</td>
+                            <td style="color: orange; background-color: black;">align-self: flex-start;</td>
+                        </tr>
+                        <tr>
+                            <td>flex-end</td>
+                            <td>The element is positioned at the end of the container.</td>
+                            <td style="color: orange; background-color: black;">align-self: flex-end;</td>
+                        </tr>
+                        <tr>
+                            <td>baseline</td>
+                            <td>The element is positioned at the baseline of the container.</td>
+                            <td style="color: orange; background-color: black;">align-self: baseline;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- flex-sizing -->
+            <div class="border_down">
+                <h2>Flex sizing</h2>
+                <ul>
+                    <!-- flex-basis -->
+                    <li>
+                        <h3>flex-basis</h3>
+                        <p>It is used for <span style="color: aqua;">flex sizing</span>.<br> It sets the initial main size of a flex item. <br>specifies the initial length of a flex item.</p>
+        
+                        <div style="border: 2px solid white; background-color: #00002c;">
+                            <details>
+                                <summary>Note :</summary>
+                                <p style="border: 2px double whitesmoke;">
+                                    If :- <span style="color: aqua;">flex-direction: row;</span><br>
+                                    then <span style="color: orange;">width of the individual item</span> will be changed. <br>
+                                    If :- <span style="color: aqua;">flex-direction: column;</span><br>
+                                    then <span style="color: orange;">height of the individual item</span> will be changed. <br>
+                                </p>
+                            </details>
+                        </div>
+                        <div class="code">
+                            <span>div {</span><br>
+                            &nbsp;&nbsp;<span class="orange_x">flex-basis: 200px;</span><br>
+                            <span>}</span>
+                        </div>
+                    </li>
+                    <!-- flex-grow -->
+                    <li>
+                        <h3>flex-grow</h3>
+                        <p>&spades; It specifies how much of the flex container's remaining space should be assigned to the flex item's main size<br>&spades; specifies how much a flex item will grow relative to the rest of the flex items. <br>&spades; Its by default value is "1".</p>
+                        <div class="code">
+                            <span>div {</span><br>
+                            &nbsp;&nbsp;<span class="orange_x">flex-grow: 1;</span><br>
+                            <span>}</span>
+                        </div>
+                        <div style="border: 2px solid white; background-color: #00002c;">
+                            <details>
+                                <summary>Note :</summary>
+                                <p style="border: 2px double whitesmoke;">
+                                    in this we use <span style="color: aqua;">max-width</span> & <span style="color: aqua;">max-width</span> Property to limit the value of height and width.
+                                </p>
+                            </details>
+                        </div>
+                    </li>
+                    <!-- flex-shrink  -->
+                    <li>
+                        <h3>flex-shrink </h3>
+                        <p>&spades; It sets the flex shrink factor of a flex item.<br>&spades; specifies how much a flex item will shrink relative to the rest of the flex items. <br>&spades; Its by default value is "1".</p>
+                        <div class="code">
+                            <span>div {</span><br>
+                            &nbsp;&nbsp;<span class="orange_x">flex-shrink: 1;</span><br>
+                            <span>}</span>
+                        </div>
+                        <div style="border: 2px solid white; background-color: #00002c;">
+                            <details>
+                                <summary>Note :</summary>
+                                <p style="border: 2px double whitesmoke;">
+                                    in this we use <span style="color: aqua;">min-width</span> & <span style="color: aqua;">min-width</span> Property to limit the value of height and width.
+                                </p>
+                            </details>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Flex Shorthand :-</h3>
+                <img src="../Images/flex_shorthand.png" alt="flex_shorthand" height="250px" draggable="false">
+            </div>
+
+         <!-- Note -->
+         <div class="border_down">
+            <h2>Note</h2>
+            <p style="background-color: #00002c; padding: 4px; border: 2px solid white;">
+                <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: grid;</span> and <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: flex;</span> are "Block" element.
+                <br>If We want to make them inline element the we have to use :- <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: inline-grid;</span> and <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: inline-flex;</span>.
+            </p>
+          </div>
+
+        </div>
+        <div class="border_down">
+            <span>
+                <span class="bold_x">Note :</span><br>
+                We can play games to learn flexbox by following website. <br>
+                <a href="https://codingfantasy.com/games/flexboxadventure" target="_blank">PLAY GAMES TO LEARN FLEXBOX</a>
+            </span>
+        </div>
+
+        <div class="border_down">
+
+            <ul>
+                <li>
+                    <span class="bold_x">Flex Box Delta Batch Practice Page :-</span><br>
+                    <a href="../Exercise/html_files/flex_Box_Practice.html" target="_blank">FLEXBOX PRACTICE</a>
+                </li>
+                <li>
+                    <span class="bold_x">Flex Box Delta Batch Homework Page :-</span><br>
+                    <a href="../Exercise/html_files/flexbox_homework.html" target="_blank">FLEXBOX HOMEWORK</a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!--    <span class="bold_x"></span>
+            <span style="color: ;"></span>   -->
+
+<!-- 
+            <tr>
+                <td>asdf</td>
+                <td>adfa.</td>
+                <td style="color: orange; background-color: black;">adf</td>
+            </tr> -->
+<!-- this is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+</body>
+</html>

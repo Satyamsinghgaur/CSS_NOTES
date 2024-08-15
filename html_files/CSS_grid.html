@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/CSS_grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+    <title>CSS GRID MODEL | DELTA BATCH NOTES</title>
+</head>
+<body>
+<!-- this is header portion -->
+    <header>
+        <!-- navbar. -->
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <!-- main heading -->
+        <h1>CSS Grid</h1>
+    </header>
+
+<!-- this is main portion -->
+    <main>
+        <!-- grid Introduction -->
+        <div class="border_down">
+            <h2>What is CSS Grid?</h2>
+            <p>
+                &spades; CSS Grid is a layout system that allows you to create complex web layouts easily. Imagine a grid as a table with rows and columns. With CSS Grid, you can place elements into these rows and columns, making it easy to organize content on a webpage. <br>
+                &spades; Setting a container's display to grid will make all children grid items
+            </p>
+            <div class="code">
+                <span>container {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">Display: grid;</span><br>
+                <span>}</span>
+            </div>
+            <img src="../Images/grid.png" alt="grid container and items" height="150px" draggable="false">
+        </div>
+        <!-- grid elements -->
+        <div class="border_down">
+            <h1>Grid elements</h1>
+            <h3>Grid Container</h3>
+            <p>The element that uses <span style="color: orange; background-color: black; border: 2px solid white; padding: 0 2px;">display: grid;</span>. It holds all the grid items.</p>
+            <h3>Grid Items</h3>
+            <p>The direct children of the grid container. They are placed into the grid cells.</p>
+            <h3>Grid Lines</h3>
+            <p>The lines that divide the grid into rows and columns.</p>
+        </div>
+        <!-- grid Model -->
+        <div class="border_down">
+            <h2>Grid Model</h2>
+            <p>The grid model in CSS is like a blueprint or a plan for how to arrange items on a webpage. It defines a structured layout where you can place your content in rows and columns, similar to how you might organize items on a shelf or a spreadsheet.</p>
+            <img src="../Images/Grid_Model.png" alt="grid model" height="250px" draggable="false">
+            <div class="bold_x">Key Concepts</div>
+            <ul>
+                <li>
+                    <h3>Grid Lines</h3>
+                    <p>The invisible lines that divide the grid into different sections. These lines help you position and size your grid items.</p>
+                </li>
+                <li>
+                    <h3>Grid Tracks</h3>
+                    <p>The rows and columns themselves. Think of them as the spaces between grid lines where content can go.</p>
+                </li>
+                <li>
+                    <h3>Grid Cells</h3>
+                    <p>The individual squares or rectangles formed by the intersections of rows and columns. Each cell can hold a grid item.</p>
+                </li>
+            </ul>
+            <img src="../Images/grid_layout.png" alt="grid layout" height="300px" draggable="false" style="border: 3px solid blueviolet;" title="Grid Layout">
+        </div>
+        <!-- Grid Row gap -->
+        <div class="border_down">
+            <h2>Grid Rowns Gap</h2>
+            <p>The spaces between each column/row are called gaps.</p>
+            <div class="code">
+                <span>container {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">Display: grid;</span><br>
+                &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">column-gap: 50px;</span><br>
+                <span>}</span>
+            </div>
+            <img src="../Images/grid_row_column.png" alt="grid rowns gap" height="300px" draggable="false" style="border: 3px solid blueviolet;">
+        </div>
+        <!-- grid-template. -->
+        <div class="border_down">
+            <h2>Grid Template</h2>
+            <p>They define the lines & track sizing</p>
+            <ul>
+                <!-- grid template rows -->
+                <li>
+                    <h3>grid-template-rows</h3>
+                    <p>specifies the number (and the heights) of the rows in a grid layout.</p>
+                    <div class="code">
+                        <span>container {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">display: grid;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-rows: 100px 200px auto;</span><br>
+                        <span>}</span>
+                        <details>
+                            <summary><span class="bold_x" style="color: green;">Explaination:</span></summary>
+                            This creates a grid with three rows:
+                            <ul>
+                                <li>The first row is 100 pixels tall.</li>
+                                <li>The second row is 200 pixels tall.</li>
+                                <li>The third row is automatically sized to fit its content.</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <span class="bold_x">Other Examples :-</span>                    
+                    <div class="code">
+                        <span>container {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-rows: auto auto;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-rows: 50px 100px;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-rows: 20% 20%;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-rows: 70px auto;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+                <!-- grid template column -->
+                <li>
+                    <h3>grid-template-columns</h3>
+                    <p>specifies the number (and the widths) of columns in a grid layout.</p>
+                    <div class="code">
+                        <span>container {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">display: grid;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-columns: 1fr 2fr 1fr;</span><br>
+                        <span>}</span>
+                        <details>
+                            <summary><span class="bold_x" style="color: green;">Explaination:</span></summary>
+                            This creates a grid with three columns:
+                            <ul>
+                                <li>The first column takes up 1 fraction of the available space.</li>
+                                <li>The second column takes up 2 fractions of the available space.</li>
+                                <li>The third column takes up 1 fraction of the available space.</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <span class="bold_x">Other Examples :-</span>
+                    <div class="code">
+                        <span>container {</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-columns: auto auto auto;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-columns: 50px 100px;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-columns: 10% 10% 10%;</span><br>
+                        &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">grid-template-columns: 70px auto;</span><br>
+                        <span>}</span>
+                    </div>
+                </li>
+            </ul>
+            <h3 style="color: aqua;">Grid template Units :-</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>none</td>
+                        <td>Default value. <br>Columns/Rows are created if needed</td>
+                    </tr>
+                    <tr>
+                        <td>auto</td>
+                        <td>The size of the Columns/Rows is determined by the size of the container and on the size of the content of the items in the Columns/Rows</td>
+                    </tr>
+                    <tr>
+                        <td>max-content</td>
+                        <td>Sets the size of each Columns/Rows to depend on the largest item in the Columns/Rows</td>
+                    </tr>
+                    <tr>
+                        <td>min-content</td>
+                        <td>Sets the size of each Columns/Rows to depend on the smallest item in the Columns/Rows</td>
+                    </tr>
+                    <tr>
+                        <td>fr</td>
+                        <td>stands for "fraction of the available space." It's used to divide space in the grid container among columns or rows.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Grid Template Repeat</h2>
+            <p>Repeat is used to divide all available space</p>
+            <div class="code">
+                &nbsp;<span style="color: gray;">&lt;!-- For Rows --&gt;</span><br>
+                <span class="orange_x">grid-template-rows: repeat(count, 1fr);</span><br>
+                <span style="border: 1px solid white; padding-left: 2px; display: block; background-color: rgb(71, 7, 7);">
+                    <details>
+                        <summary><span class="bold_x" style="color: green;">Explaination:</span></summary>
+                        <span class="orange_x">grid-template-rows: repeat(count, 1fr);</span><br>
+                        &diam; This creates a grid with follwing parameters:
+                        <ul>
+                            <li>The "Count" will make the no. of rows mentioned in its value</li>
+                            <li>Here 1fr means 1 fraction of 100% width.</li>
+                        </ul>
+                        &spades; So For Example If we take <br>
+                        <span class="orange_x">grid-template-rows: repeat(2, 1fr);</span><br>
+                        Then It will create two rows of 1fr cell-track(Width).
+                    </details>
+                </span>
+                <span class="orange_x">grid-template-rows: repeat(2, 1fr);</span><br>
+                <span class="orange_x">grid-template-rows: 1fr 1fr;</span><br>
+                &nbsp;<span style="color: gray;">&lt;!-- For Columns --&gt;</span><br>
+                <span class="orange_x">grid-template-columns: repeat(count, 1fr);</span><br>
+                <span class="orange_x">grid-template-columns: repeat(2, 1fr)</span><br>
+                <span class="orange_x">grid-template-columns: 1fr 1fr;</span>
+            </div>
+        </div>
+        <!-- Grid Gaps. -->
+        <div class="border_down">
+            <h2>Grid Gaps</h2>
+            <p>They define the gaps between the lines.</p>
+            <img src="../Images/grid_row_column.png" alt="grid rowns gap" height="300px" draggable="false" style="border: 3px solid blueviolet;">
+            <div class="code">
+                <span class="orange_x">row-gap: 10px;</span><br>
+                <span class="orange_x">column-gap: 10px;</span><br>
+                <span class="orange_x">grid-gap: <span style="color: aqua;">row-gap</span> <span style="color: red;">column-gap</span>;</span><br>
+                <span style="color: gray;">// grid-gap: 10px 10px;</span>
+            </div>
+        </div>
+        <!-- Grid Columns. -->
+        <div class="border_down">
+            <h2>Grid Columns</h2>
+            <p>Defines an item's starting & ending position inside the column. <br>
+            This is implemented in the child element.</p>
+            <div class="code">
+                <span>Grid_Item {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-column-start: line_number;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-column-end: line_number;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-column: <span style="color: aqua;">start_column </span> / <span style="color: red;">end_column</span>;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-column: <span style="color: aqua;">start_column </span> / <span style="color: red;">span </span><span style="color: green;"">number</span>;</span><br>
+                <span style="display: inline-block; background-color: black; border: 1px solid yellow; padding: 2px;">
+                    <details>
+                        <summary style="color: red;">Explaination of span</summary>
+                        Span means how many grid cell will be consumed by the item after starting column. <br>
+                        <span class="bold_x">e.g. :</span> If its value is <span class="orange_x">grid-column: 2 / span 5;</span><br>
+                        Then item will take column 2 to 7, It means "<span style="color: aqua;">2 (starting column)</span> + <span style="color: yellowgreen;">"3, 4, 5, 6, 7 (next 5 cells)".</span>  
+                    </details>
+                </span><br>
+                <span>}</span>
+            </div>
+            <div class="bold_x">Example</div>
+            <div class="code">
+                <span>.Grid_Item1 {</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-column-start: 1;</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-column-end: 3;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">OR</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-column: <span style="color: aqua;">1 </span> / <span style="color: red;">3</span>;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">OR</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-column: <span style="color: aqua;">1 </span> / <span style="color: red;">span 2</span>;</span><br>
+                    <span>}</span>
+            </div>
+            <div style="display: inline-block; background-color: black; border: 1px solid yellow; padding: 2px;">
+                <details>
+                    <summary style="color: red;">Explaination :-</summary>
+                    in above Example the perticular grid item will take widht from column-1 to column-3. 
+                </details>
+            </div>
+        </div>
+        <!-- Grid Rows. -->
+        <div class="border_down">
+            <h2>Grid Rows</h2>
+            <p>Defines an item's starting & ending position inside the row. <br>
+            This is implemented in the child element.</p>
+            <div class="code">
+                <span>Grid_Item {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-row-start: line_number;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-row-end: line_number;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-row: <span style="color: aqua;">start_row </span> / <span style="color: red;">end_row</span>;</span><br>
+                &nbsp;&nbsp;<span class="orange_x">grid-row: <span style="color: aqua;">start_row </span> / <span style="color: red;">span </span><span style="color: green;"">number</span>;</span><br>
+                <span style="display: inline-block; background-color: black; border: 1px solid yellow; padding: 2px;">
+                    <details>
+                        <summary style="color: red;">Explaination of span</summary>
+                        Span means how many grid cell will be consumed by the item after starting row. <br>
+                        <span class="bold_x">e.g. :</span> If its value is <span class="orange_x">grid-row: 2 / span 5;</span><br>
+                        Then item will take row 2 to 7, It means "<span style="color: aqua;">2 (starting row)</span> + <span style="color: yellowgreen;">"3, 4, 5, 6, 7 (next 5 cells)".</span>  
+                    </details>
+                </span><br>
+                <span>}</span>
+            </div>
+            <div class="bold_x">Example</div>
+            <div class="code">
+                <span>.Grid_Item1 {</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-row-start: 1;</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-row-end: 3;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">OR</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-row: <span style="color: aqua;">1 </span> / <span style="color: red;">3</span>;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">OR</span><br>
+                    &nbsp;&nbsp;<span class="orange_x">grid-row: <span style="color: aqua;">1 </span> / <span style="color: red;">span 2</span>;</span><br>
+                    <span>}</span>
+            </div>
+            <div style="display: inline-block; background-color: black; border: 1px solid yellow; padding: 2px;">
+                <details>
+                    <summary style="color: red;">Explaination :-</summary>
+                    in above Example the perticular grid item will take widht from row-1 to row-3. 
+                </details>
+            </div>
+        </div>
+        <!-- css grid common properties -->
+         <div class="border_down">
+            <h2>CSS Grid Common Properties</h2>
+            <ul>
+                <!-- Horizontal alignment -->
+                <li>
+                    <h3>Horizontal Alignment</h3>
+                    <ul>
+                        <li>
+                            <span class="bold_x">justify-items</span>
+                            <p>Used for <span style="color: aqua;">Grid-Container</span>.</p>
+                            <div class="code">
+                                <span>container {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">justify-items: value;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bold_x">justify-self</span>
+                            <p>Used for <span style="color: aqua;">Grid-Items</span>.</p>
+                            <div class="code">
+                                <span>Grid_Item {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">justify-self: value;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- vertical alignment. -->
+                <li>
+                    <h3>Vertical Alignment</h3>
+                    <ul>
+                        <li>
+                            <span class="bold_x">align-items</span>
+                            <p>Used for <span style="color: aqua;">Grid-Container</span>.</p>
+                            <div class="code">
+                                <span>container {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">align-items: value;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bold_x">align-self</span>
+                            <p>Used for <span style="color: aqua;">Grid-Items</span>.</p>
+                            <div class="code">
+                                <span>Grid_Item {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">align-self: value;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Combined alignment. -->
+                <li>
+                    <h3>Combined Alignment</h3>
+                    <ul>
+                        <li>
+                            <span class="bold_x">place-items</span>
+                            <p>UA shorthand property that combines <span style="color: aqua;">align-items</span> and <span style="color: aqua;">justify-items</span>, allowing you to set both horizontal and vertical alignment for all grid items at once.</p>
+                            <div class="code">
+                                <span>container {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">place-items: <span style="color: red;">vertical</span> <span style="color: greenyellow;">horizontal</span>;</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">place-items: <span style="color: red;">center</span> <span style="color: greenyellow;">start</span>;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bold_x">place-self</span>
+                            <p> A shorthand property that combines <span style="color: aqua;">align-self</span> and <span style="color: aqua;">justify-self</span>, allowing you to set both horizontal and vertical alignment for a specific grid item at once.</p>
+                            <div class="code">
+                                <span>Grid_Item {</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">place-self: <span style="color: red;">vertical</span> <span style="color: greenyellow;">horizontal</span>;</span><br>
+                                &nbsp;&nbsp;<span class="orange_x">place-self: <span style="color: red;">end</span> <span style="color: greenyellow;">stretch</span>;</span><br>
+                                <span>}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- values for abouve properties. -->
+            <div>
+                <h2>Value table for aligning properties</h2>
+                <table style="background-color: black;">
+                    <thead>
+                        <tr>
+                            <td>Values</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>start</td>
+                            <td>Aligns items to the start of the grid area (left for horizontal, top for vertical).</td>
+                        </tr>
+                        <tr>
+                            <td>end</td>
+                            <td>Aligns items to the end of the grid area (right for horizontal, bottom for vertical).</td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>Centers items in the grid area.</td>
+                        </tr>
+                        <tr>
+                            <td>stretch</td>
+                            <td>Stretches items to fill the entire grid area (default for <span style="color: aqua;">justify-items</span> and <span style="color: aqua;">align-items</span>).</td>
+                        </tr>
+                        <!-- <span style="color: aqua;"></span> -->
+                        <tr>
+                            <td>baseline</td>
+                            <td>Aligns items based on their baseline (used mostly with text).</td>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td>Aligns items to the left of the grid area (used only with <span style="color: aqua;">justify-items</span> and <span style="color: aqua;">justify-self</span>).</td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td>Aligns items to the right of the grid area (used only with <span style="color: aqua;">justify-items</span> and <span style="color: aqua;">justify-self</span>).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+
+         <!-- Note -->
+          <div class="border_down">
+            <h2>Note</h2>
+            <p style="background-color: #00002c; padding: 4px; border: 2px solid white;">
+                <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: grid;</span> and <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: flex;</span> are "Block" element.
+                <br>If We want to make them inline element the we have to use :- <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: inline-grid;</span> and <span class="orange_x" style="border: 2px solid yellow; padding: 0 2px; background-color: black;">display: inline-flex;</span>.
+            </p>
+          </div>
+
+        <!-- exercise link -->
+        <div class="border_down">
+            <span class="bold_x">Note:</span><br>
+            <span>Delta Batch Grid Practice</span><br>
+            <a href="../Exercise/html_files/grid_pracice.html" target="_blank">CSS GRID PRACTICE</a>
+        </div>
+    </main>
+
+    <!--    <span class="bold_x"></span>
+            <span style="color: ;"></span>
+            .border_down                    -->
+<!-- 
+            <div class="code">
+                <span>container {</span><br>
+                &nbsp;&nbsp;<span class="orange_x">adfd</span><br>
+                &nbsp;&nbsp;<span class="orange_x" style="font-weight: 700;">asdfsadf</span><br>
+                <span>}</span>
+            </div>
+-->
+
+    
+<!-- this is footer portion -->
+    <footer>
+        <span id="footer_css">
+            <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+        </span>
+    </footer>
+</body>
+</html>

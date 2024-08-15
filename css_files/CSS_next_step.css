@@ -1,0 +1,21 @@
+
+img {
+    border: 2px solid white;
+}
+
+
+#transiton {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 65px 0;
+    background-color: blue;
+    transition: all 1.5s ease 0.5s;
+}
+
+#transiton:hover {
+    border-radius: 50%;
+    color: aqua;
+    background-color: red;
+}

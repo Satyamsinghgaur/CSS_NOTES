@@ -1,0 +1,76 @@
+/* Not Changable styles */
+body{
+    background-color: #dbd8e3;
+    font-family: monospace;
+}
+
+h1{
+    background-color: #2a2438;
+    color: #dbd8e3;
+    text-align: center;
+}
+
+main{
+    background-color: #5c5470;
+}
+
+footer{
+    background-color: #5c5470;
+}
+
+div{
+    background-color: #352f44;
+    color: white;
+}
+
+p{
+    background-color: #2a2438;
+    color: #dbd8e3;
+}
+
+.links{
+    background-color: #2a2438;
+}
+
+#location{
+    height: 300px;
+    width: 300px;
+}
+
+.trade-mark{
+    text-align: right;
+    bottom: auto;
+}
+
+/* a normal, unvisited link */
+a:link{
+    color: orange;
+    text-decoration: none;
+}
+/* a link the user has visited */
+a:visited{
+    color: orange;
+    text-decoration: none;
+}
+/* a link when the user mouses over it */
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+/* a link the moment it is clicked */
+a:active{
+    color: red;
+    text-decoration: none;
+}
+/*  id selector - # and 
+    class selector - .  */
+
+
+/* color pallet for this website -
+
+1. #dbd8e3
+2. #5c5470
+3. #352f44
+4. #2a2438
+
+*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Smiley Face</title>
+    <style>
+        .face {
+
+            width: 400px;
+            height: 400px;
+            background-color: #ffa511;
+            border-radius: 50%;
+        }
+
+        .mouth {
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            width: 200px;
+            height: 75px;
+            background-color: brown;
+            border-radius: 0 0 50% 50%;
+        }
+
+        .left_eye, .right_eye {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+            position: absolute;
+        }
+        .left_eye {
+            left: 100px;
+            top: 100px;
+        }
+        .right_eye{
+            top: 100px;
+            left: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="mouth"></div>
+        <div class="eyes">
+            <div class="left_eye"></div>
+            <div class="right_eye"></div>
+        </div>
+    </div>
+</body>
+</html>

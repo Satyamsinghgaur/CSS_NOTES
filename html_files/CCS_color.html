@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COLORS | DELTA BATCH NOTES</title>
+    <link rel="stylesheet" href="../css_files/defaultry.css">
+    <link rel="stylesheet" href="../css_files/css_color.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/navbar_inside_page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="logo" class="nav_item">
+                    <span style="color: #4169E1;">S</span><span style="color: #DC143C;">a</span><span style="color: #FF4500;">t</span><span style="color: #228B22;">y</span><span style="color: #FFD700;">a</span><span style="color: #8A2BE2;">m</span>
+                </div>
+                <div id="home" class="nav_item"><a href="../index.html">Home</a></div>
+                <div class="dropdown" class="nav_item" style="padding: 0px" >
+                    <button class="dropbtn" style="margin: 0px;" >Pages</button>
+                    <div class="dropdown-content" style="margin: 0px; padding: 0;" >
+                        <a style="margin: 0px;" href="../html_files/CSS_Intro.html">Introduction</a>
+                        <a style="margin: 0px;" href="../html_files/CCS_color.html">Colors</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_text.html">Text & Font</a>
+                        <a style="margin: 0px;" href="../html_files/css_box_model.html">Box Model</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_units.html">Units</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_next_step.html">Next Steps</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_flexbox.html">Flexbox</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_grid.html">Grid</a>
+                        <a style="margin: 0px;" href="../html_files/CSS_final.html">CSS Essentials</a>
+                    </div>
+                </div>
+                <div id="About" class="nav_item"><a href="../html_files/contact_us.html" target="_blank">Contact Us</a></div>
+            </div>
+        </nav>
+        <h1>CSS Colors</h1>
+    </header>
+
+    <main>
+        <div class="border_down">
+            <h2>Color Property</h2>
+            <p>Used to set the color of the foreground</p>
+            <div class="code">
+                <span style="color: gray;">&lt;!--By using the color name.--&gt;</span><br>
+                <span style="color: orange;">color : purple;</span> <br><br>
+                <span style="color: gray;">&lt;!--By using the color code which is hexa-decimal value--&gt;</span><br>
+                <span style="color: orange;">color : #ffffff;</span>
+                <br><br>
+                <span style="color: gray;">&lt;!--By using the color RGB value--&gt;</span><br>
+                <span style="color: orange;">color : rgb(<span style="color: green;"> 255, 255, 255 </span>);</span>
+            </div>
+        </div>
+        
+        <div class="border_down">
+            <h2>Background-color Property</h2>
+            <p>Used to set the colot of the background.</p>
+            <div class="code">
+                <span style="color: gray;">&lt;!--By using the backgroud-color name.--&gt;</span><br>
+                <span style="color: orange;">backgroud-color : purple;</span> <br><br>
+                <span style="color: gray;">&lt;!--By using the backgroud-color code which is hexa-decimal value--&gt;</span><br>
+                <span style="color: orange;">backgroud-color : #ffffff;</span>
+                <br><br>
+                <span style="color: gray;">&lt;!--By using the backgroud-color RGB value--&gt;</span><br>
+                <span style="color: orange;">backgroud-color : rgb(<span style="color: green;"> 255, 255, 255 </span>);</span>
+            </div>
+        </div>
+
+        <div class="border_down">
+            <h2>Color Systems</h2>
+            <p>There are many color systems in css :-</p>
+            <ul style="background-color: #443f52;">
+                <li>
+                    <h3>Named Colors :-</h3>
+                    <p>Each browser recognizes around approximate 140 to 150 named colors. <br>Eg. - <span style="color: red;">Red</span>,<span style="color: blue;">Blue</span>,<span style="color:pink ;">Pink</span>,<span style="color: purple;">Purple</span> etc.</p>
+                    <div class="code">
+                        <span style="color: orange;">color : orange
+                            ;</span>
+                    </div>
+                </li><hr>
+                <li>
+                    <h3>RGB Color System</h3>
+                    <p>Red - Green - Blue <br>Used in T.V. , Camera etc.<br><span style="color: yellow;">Colors value range is -> <span style="color: orange;"> ( 0 - 255 )</span></span><br>RGB ( <span style="color: red;">red value</span>, <span style="color: green;">green value</span>, <span style="color: blue;">blue value</span> )</p>
+                    <img src="../Images/rgb.png" alt="rgb values" height="150px">
+                    <div>
+                        <p style="background-color: green; width: 200px; padding: 5px 5px 5px 5px; border: solid; border-color: gold;">
+                        <span style="color: rgb(255, 0, 0);">red is rgb(255, 0, 0)</span><br>
+                        <span style="color: rgb(0, 0, 255);">blue is rgb(0, 0, 255)</span><br>
+                        <span style="color: rgb(0, 0, 0);">black is rgb(0, 0, 0)</span><br>                        
+                        <span style="color: rgb(255, 255, 255);">white is rgb(255, 255, 255)</span><br>
+                        <span style="color: rgb(255, 255, 0);">yello is rgb(255, 255, 0)</span>
+                        </p>
+                    </div>
+                    <div class="code">
+                        <span style="color: gray;">&lt;!--RGB code for orange color.--&gt;</span><br>
+                        <span style="color: rgb(255,165,0);">color: rgb(255,165,0);</span>
+                    </div>
+                </li><hr>
+                <li>
+                    <h3>Hexa-decimal or Hex or Hex-code Color System</h3>
+                    <p>used the hexa-decimal code to represent color <br>There are following 16 letters in hexa-decimal code :- <br>0, 1, 2, 3, 4, 5, 6, 7 ,8 ,9, A, B, C, D, E, F <br>This is compact version of RGB code.</p>
+                    <img src="../Images/hex_value.png" alt="hex value" height=150px" style="border: solid; border-color: black; border-radius: 3%;">
+                    <div class="code">
+                        <span style="color: gray;">&lt;!--RGB code for orange color.--&gt;</span><br>
+                        <span style="color: #FFA500;">color: #FFA500;</span>
+                    </div>
+                    <hr>
+                    <h3>Number System :-</h3>
+                    <table border="solid">
+                       
+                        <thead>
+                            <tr>
+                                <th>Decimal</th>
+                                <th>Binary</th>
+                                <th>Hexa-decimal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Digits: 0 to 9</td>
+                                <td>Digits: 0 & 1</td>
+                                <td>characters: "0 to 9" & "A to F"</td>
+                            </tr>
+                            <tr>
+                                <td>Used in daily math</td>
+                                <td>used in computers</td>
+                                <td>used in hexcode and color System</td>
+                            </tr>
+                            <tr>
+                                <td>base 10</td>
+                                <td>base 2</td>
+                                <td>base 16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+            <div>
+                <h4>Color Picker :- </h4>
+                <p>
+                    used to get the color rgb, hex etc value <br>
+                    <a href="https://g.co/kgs/91cPxb6" target="_blank">COLOR PICKER</a>
+                </p>
+            </div>
+        </div>
+
+    </main>
+    
+    
+    <!-- 
+        <div class="border_down">
+
+        </div> -->
+
+
+        <!-- code comment html - 
+        <span style="color: gray;">&lt;!-- --&gt;</span><br> -->
+        <!-- &lt; &gt; -->
+
+
+    <!-- This is footer portion -->
+        <footer>
+            <span id="footer_css">
+                <svg id="home_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>&nbsp;<a href="../index.html">HOME PAGE</a>
+            </span>
+        </footer>
+    
+        
+</body>
+</html>
